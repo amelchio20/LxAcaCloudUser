@@ -1,0 +1,296 @@
+    1  curl http://169.254.169.254/latest/meta-data/instance-id
+    2  yum update -y
+    3  ps
+    4  yum install git -y
+    5  git --version
+    6  ll
+    7  ls -lart
+    8  git config --global user.name "Root User"
+    9  git config --global user.email "root@localhost"
+   10  ls -alrt
+   11  cd .config/
+   12  ls -lart
+   13  cd ..
+   14  ls -lart
+   15  ls -alrt
+   16  cd
+   17  ls -alrt
+   18  cd .gitconfig
+   19  pwd
+   20  cat .gitconfig 
+   21  git config --list
+   22  pwd
+   23  pwd
+   24  git config --list
+   25  ls -lart /etc/*git*
+   26  ls -lart /etc/.*git*
+   27  history
+   28  git config --system system.name "Git Repo Server 1"
+   29  ls -lart /etc/.*git*
+   30  ls -lart /etc/*git*
+   31  cat /etc/gitconfig 
+   32  git config --global system.name "My Git Repo Server1"
+   33  git config --list
+   34  cat .gitconfig 
+   35  vim
+   36  cd
+   37  git config --global core.editor vim
+   38  cat .gitconfig 
+   39  git config --global core.pager 'more'
+   40  cat .gitconfig 
+   41  git config --list
+   42  vim .gitignore_global
+   43  git config --global core.excludesfiles ~/.gitignore_global
+   44  git config --list
+   45  cat .gitconfig 
+   46  cd
+   47  mkdir gittest
+   48  cd gittest/
+   49  ls -lart
+   50  cd .git
+   51  git init
+   52  ls -lart
+   53  cd .git
+   54  ls -lart
+   55  ll
+   56  find .
+   57  cd ..
+   58  ll
+   59  ls -lart
+   60  git status
+   61  vi test.txt
+   62  git status
+   63  git add test.txt
+   64  git status
+   65  git commit
+   66  find .
+   67  cd ..
+   68  ls -lart
+   69  mkdir mydir
+   70  cd mydir
+   71  cp /etc/h* .
+   72  ls -lart
+   73  git status
+   74  git init
+   75  git status
+   76  git add *
+   77  git status
+   78  git commit -m "this the initial file commit for my repo"
+   79  cat h*
+   80  cat h* | wc -l
+   81  ls -lart
+   82  clear
+   83  exit
+   84  ifconfig
+   85  exit
+   86  git --version
+   87  ls -lart
+   88  cd
+   89  ls -lart
+   90  mkdir test
+   91  cd test
+   92  cd ..
+   93  mv test repos
+   94  cd repos
+   95  ssh-keygen
+   96  ls -lart
+   97  ls -lart ../.ssh
+   98  cat ../.ssh/id_rsa.pub 
+   99  git clone git@github.com:amelchio20/test.git
+  100  ll
+  101  cd test/
+  102  ll
+  103  cat README.md 
+  104  git config --global user.name "Git Test"
+  105  git config --global user.email "Armin.Melchior@t-systems.com"
+  106  echo "this is a test file" >> FirstFile.txt
+  107  git status
+  108  git add FirstFile.txt
+  109  git commit -m "this first test commit"
+  110  git status
+  111  git push origin master
+  112  git push origin main
+  113  git status
+  114  clear
+  115  git checkout -b dev
+  116  git branch -a
+  117  git status
+  118  echo "development branch test" > dev.txt
+  119  git status
+  120  git add dev.txt
+  121  git commit -m "add dev.txt to dev branch"
+  122  git push origin dev
+  123  clear
+  124  echo "dev test 2" > dev2.txt
+  125  git add dev2.txt
+  126  git commit -m "2nd file" de2.txt
+  127  git commit -m "2nd file" 
+  128  git push origin dev
+  129  cd ..
+  130  mkdir repo2
+  131  cd repo2
+  132  ls -alrt
+  133  git clone https://github.com/amelchio20/test.git
+  134  cd test
+  135  ls -lart
+  136  cd ..
+  137  ll
+  138  cd test
+  139  ll
+  140  git checkout dev
+  141  git status
+  142  ll
+  143  cd ..
+  144  cd ..
+  145  cd ..
+  146  pwd
+  147  cd repos
+  148  ll
+  149  mkdir myrepo
+  150  cd myrepo
+  151  ls -lart
+  152  git init myrepo
+  153  git status
+  154  git
+  155  ll
+  156  rm -rf myrepo/
+  157  cd ..
+  158  rm -rf myrepo/
+  159  git init myrepo
+  160  ls -lart
+  161  cd myrepo
+  162  git status
+  163  git remote add  git@github.com:amelchio20/myrepo.git
+  164  git remote add origin git@github.com:amelchio20/myrepo.git
+  165  echo "first file created in myrepo" >> FirstFileMyRepo.txt
+  166  git status
+  167  git add FirstFileMyRepo.txt 
+  168  git commit -m "FirstFileMyRepo file added to myrepo"
+  169  git push origin main
+  170  git push origin
+  171  git push origin master
+  172  git push --set-upstream origin master
+  173  git remote add origin git@github.com:amelchio20/myrepo.git
+  174  git push --set-upstream origin master git@github.com:amelchio20/myrepo.git
+  175  git branch -a
+  176  git status
+  177  git push origin master
+  178  pwd
+  179  sudo yum install postfix
+  180  sudo systemctl enable postfix
+  181  sudo systemctl start  postfix
+  182  ps -aux |  grep -i iptable
+  183  cd /etc/selinux
+  184  ll
+  185  sudo yum install httpd
+  186  ps -aux | grep -i http
+  187  sudo systemctl enable httpd
+  188  sudo systemctl start httpd
+  189  ps -aux | grep -i http
+  190  pwd
+  191  exit
+  192  ls -alrt
+  193  mv terraform /usr/local/bin
+  194  ls -alrt /usr/local/bin/ter
+  195  ls -alrt /usr/local/bin/ter*
+  196  terraform -v
+  197  exit
+  198  yum -y install python3-pip
+  199  pip3 install awscli --user
+  200  exit
+  201  eyum update
+  202  yum update
+  203  # sudo yum install -y python2-pip python3 python3-setuptools
+  204  exit
+  205  update-alternatives  --set python /usr/bin/python3.8
+  206  # sudo yum install -y python2-pip python3 python3-setuptools
+  207  sudo update-alternatives --config python
+  208  sudo update-alternatives --config python
+  209  sudo update-alternatives --install /usr/bin/python3 python /usr/bin/python3.8.6
+  210  sudo update-alternatives --install /usr/bin/python3 python /usr/bin/python3.8.6
+  211  ls -lart /usr/local/bin/python
+  212  exit
+  213  docker -v
+  214  sudo docker run hello-world
+  215   sudo systemctl start docker
+  216  sudo yum install -y yum-utils
+  217  yum install docker
+  218  sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+  219   sudo yum install docker-ce docker-ce-cli containerd.io
+  220   sudo yum install docker-ce docker-ce-cli containerd.io --allowerasing
+  221  docker -v
+  222  aws configure
+  223  exit
+  224  aws s3 ls
+  225  exit
+  226  ls -alrt /run/podman/podman.sock
+  227  cd /run/podman/
+  228  ls -lart
+  229  rm /var/run/docker.sock
+  230  docker run hello-world
+  231  yum install -y docker
+  232  yum install -y docker --allowerasing
+  233  docker
+  234  docker -v
+  235  docker run hello-world
+  236  exit
+  237   sudo yum install docker-ce docker-ce-cli containerd.io --allowerasing
+  238  docker -v
+  239  docker run hello-world
+  240  systemctl start docker
+  241  docker run hello-world
+  242  docker run hello-world
+  243  exit
+  244  fc -l -20
+  245  pwd
+  246  cd ..
+  247  mkdir lambda_function
+  248  cd lambda_function/
+  249  wget https://raw.githubusercontent.com/linuxacademy/content-lambda-deep-dive/master/section_6/live_activity_12/lambda_function.py
+  250  ls -lart
+  251  pwd
+  252  cd ..
+  253  ls -alrt
+  254  rm -rf lambda_function/
+  255  exit
+  256  cd /usr/local/lib
+  257  ls -alrt
+  258  mkdir python3.6
+  259  ls -lart
+  260  exit
+  261  cd /usr/local/lib
+  262  cd python3.6/
+  263  mkdir site-packages
+  264  ls -lart
+  265  cd ..c
+  266  cd ..
+  267  cd ..
+  268  ls -lart
+  269  man chmod
+  270  chmod -R 777 ./lib
+  271  ls -alrt
+  272  cd lib
+  273  ls -alrt
+  274  exit
+  275  cd /usr/local/lib64
+  276  ls -alrt
+  277  mkdir python3.6
+  278  cd ..
+  279  ls -alrt
+  280  chmod -R 777 ./lib64
+  281  exit
+  282  exit
+  283  pwd
+  284  history > ./cmds_280721
+  285  ls a-lrt
+  286  ls -alrt
+  287  exit
+  288  history > ./cmds_root_280721
+  289  exit
+  290  chmod 777 *root_*
+  291  exit
+  292  history | grep -i dock
+  293  systemctl start docker
+  294  exit
+  295  exit
+  296  history > /home/cloud_user/important/cmds_root_040821.log

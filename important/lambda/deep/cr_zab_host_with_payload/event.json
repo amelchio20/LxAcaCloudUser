@@ -1,0 +1,17 @@
+{
+    "host": "amelchio1",
+    "interfaces": {
+      "type": 1,
+      "main": 1,
+      "useip": 1,
+      "ip": "192.168.3.1",
+      "dns": "amelchio1",
+      "port": "10050"
+    },
+    "groups": {
+      "groupid": "20"
+    },
+    "templates": {
+      "templateid": "10343"
+    }
+}

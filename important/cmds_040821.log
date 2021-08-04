@@ -1,0 +1,1000 @@
+  134  ls /usr/bin/python*
+  135  ls -lart /usr/bin/python
+  136  ls -lart /usr/bin/python*
+  137  cat /etc/*releae*
+  138  cat /etc/*release*
+  139  sudo update-alternatives --config python
+  140  python --version
+  141  python3.8 --version
+  142  ls -lart /usr/bin/python*
+  143  sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8.6
+  144  sudo update-alternatives  --set python /usr/bin/python3.8
+  145  sudo update-alternatives  --set python /usr/bin/python3.8.6
+  146  sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8
+  147  sudo -s
+  148  ls -lart /usr/bin/python*
+  149  ls -lart  /usr/local/bin/python3 
+  150  ls -lart  /usr/bin/python3 
+  151  ls -lart /usr/bin/python*
+  152  aws sts help
+  153  aws sts get
+  154  aws sts get-caller-identity
+  155  aws s3 ls
+  156  python3.8
+  157  pip3 install boto3 --user
+  158  pip3.8 install boto3 --user
+  159  python3.8
+  160  aws configure
+  161  aws ec2 describe-instances
+  162  exit
+  163  pwd
+  164  ls -alrt
+  165  mkdir lambda
+  166  cd lambda/
+  167  ls -alrt
+  168  mkdir zap1
+  169  cd zap1/
+  170  ls -lat
+  171  ls -lart
+  172  pip3 install --target ./package requests
+  173  pip3 install --target ./package pyzabbix
+  174  pip3 install --target ./package requests --upgrade
+  175  pip3 install --target ./package pyzabbix --upgrade
+  176  ls -lart
+  177  vi lambda_function.py
+  178  cd package/
+  179  zip -r ../my-deployment-package.zip 
+  180  zip -r ../my-deployment-package.zip .
+  181  cd ..
+  182  ls -l
+  183  zip -g my-deployment-package.zip lambda_function.py
+  184  ls -l
+  185  vi lambda_poliy.txt
+  186  ls -l
+  187  mv lambda_poliy.txt lambda_policy.json
+  188  aws iam create-role --role-name lambda-ex --assume-role-policy-document file://lambda-policy.json
+  189  pwd
+  190  aws iam create-role --role-name lambda-ex --assume-role-policy-document file:///home/cloud_user/lambda/zap1/lambda-policy.json
+  191  aws iam create-role --role-name lambda-ex --assume-role-policy-document file://home/cloud_user/lambda/zap1/lambda-policy.json
+  192  ls -alrt /home/cloud_user/lambda/zap1/lambda-policy.json
+  193  ls -l
+  194  pwd
+  195  ls -lart /home/cloud_user/lambda/zap1
+  196  ls -lart /home/cloud_user/lambda/zap1/lambda_policy.json
+  197  aws iam create-role --role-name lambda-ex --assume-role-policy-document file:///home/cloud_user/lambda/zap1/lambda_policy.json
+  198  aws iam create-role --role-name lambda-ex --assume-role-policy-document file://home/cloud_user/lambda/zap1/lambda_policy.json
+  199  aws iam create-role --role-name lambda-ex --assume-role-policy-document file:///home/cloud_user/lambda/zap1/lambda_policy.json
+  200  aws s3 ls
+  201  aws configure
+  202  aws iam create-role --role-name lambda-ex --assume-role-policy-document file:///home/cloud_user/lambda/zap1/lambda_policy.json
+  203  vi  /home/cloud_user/lambda/zap1/lambda_policy.json
+  204  aws iam create-role --role-name lambda-ex --assume-role-policy-document file:///home/cloud_user/lambda/zap1/lambda_policy.json
+  205  vi  /home/cloud_user/lambda/zap1/lambda_policy.json
+  206  aws iam create-role --role-name lambda-ex --assume-role-policy-document file:///home/cloud_user/lambda/zap1/lambda_policy.json
+  207  vi  /home/cloud_user/lambda/zap1/lambda_policy.json
+  208  ## aws lambda create-function --function-name lbtest --zip-file fileb://my-deployment-package.zip --handler lambda_function.lambda_handler --runtime python3.7 --role arn:aws:iam::621046659448:role/service-role/lbtest-role-qiqf2bqt --vpc-config SubnetIds=subnet-00b48792fc4747851,subnet-069d83e46d1b6926d,SecurityGroupIds=sg-0e41019941cddeb20 --timeout 180
+  209   --memory-size 1024
+  210  aws lambda create-function --function-name lbtest -zip-file fileb://my-deployment-package.zip --handler lambda_function.lambda_handler --runtime python3.7 --role arn:aws:iam::242307434447:role/service-role/zabp1-role-2zcf134r -timeout 180 --memory-size 1024
+  211  ll
+  212  aws lambda create-function --function-name lbtest --zip-file fileb://my-deployment-package.zip --handler lambda_function.lambda_handler --runtime python3.7 --role arn:aws:iam::242307434447:role/service-role/zabp1-role-2zcf134r -timeout 180 --memory-size 1024
+  213  aws lambda create-function --function-name lbtest --zip-file fileb://my-deployment-package.zip --handler lambda_function.lambda_handler --runtime python3.7 --role arn:aws:iam::242307434447:role/service-role/zabp1-role-2zcf134r --timeout 180 --memory-size 1024
+  214  exit
+  215  aws configure
+  216  aws s3 ls
+  217  aes ec2 describe-instances
+  218  aws ec2 describe-instances
+  219  aws sts get
+  220  aws sts get-caller-identity
+  221  pwd
+  222  ls -alrt
+  223  cd lambda
+  224  ls -lart
+  225  cd zap1
+  226  ls -lart
+  227  cd ..
+  228  mkdir deep
+  229  cd deep
+  230  mkdir alias
+  231  cd alias/
+  232  vi lambda_function.py
+  233  zip -g ebs-files.zip lambda_function.py
+  234  ll
+  235  aws lambda create-function \ 
+  236  aws lambda create-function\ 
+  237  aws lambda create-function --region us-east-1 --function-name EBS-snapshot-from-zip --description "create alias version functions from cli" --zip-file fileb://ebs-files.zip --role arn:aws:iam::506189848464:role/service-role/backupEBS-role-qfqwpfpd --handler lambda_function.lambda_handler --runtime python3.7 --publish
+  238  which aws_completer
+  239  echo $SHELL
+  240  ls -lart ~/.local/bin/aws_completer
+  241  export PATH=/home/cloud_user/.local/bin/aws_completer:$PATH
+  242   source ~/.bash_profile
+  243  complete -C '/home/cloud_user/.local/bin/aws_completer' aws
+  244  aws ec2 describe-instancees
+  245  aws ec2 describe-instances
+  246  which aws_completer
+  247  echo $SHELL
+  248  export PATH=/home/cloud_user/.local/bin/aws_completer:$PATH
+  249   source ~/.bash_profile
+  250  complete -C '/home/cloud_user/.local/bin/aws_completer' aws
+  251  aws lambda create-alias --function-name EBS-snapshot-from-zip --description "sample alias" --function-version "\$LATEST" --name "DEV" 
+  252  aws lambda create-alias --function-name EBS-snapshot-from-zip --description "sample alias" --function-version 1 --name "PROD" 
+  253  vi lambda_function.py
+  254  ls -alrt *zip
+  255  rm *zip
+  256  zip -g ebs-files.zip lambda_function.py
+  257  aws lambda update-function-code --function-name EBS-snapshot-from-zip   --zip-file fileb://ebs-files.zip 
+  258  aws lambda publish-version  --function-name EBS-snapshot-from-zip
+  259  aws lambda update-alias --function-name EBS-snapshot-from-zip --function-version 2 --name DEV
+  260  aws lambda list-aliases --function-name EBS-snapshot-from-zip
+  261  history
+  262  aws lambda list-functions 
+  263  aws lambda list-versions-by-function --function-name EBS-snapshot-from-zip
+  264  history
+  265  aws lambda list-versions-by-function --function-name 
+  266  aws lambda list-functions 
+  267  aws lambda list-versions-by-function --function-name backupEBS
+  268  exit
+  269  cd lambda
+  270  ls -lar
+  271  cd deep
+  272  ls -lart
+  273  mkdir cloudformation
+  274  cd cloudformation/
+  275  aws iam create-role 
+  276  exit
+  277  pwd
+  278  aws configure
+  279  was s3 ls
+  280  aws s3 ls
+  281  ls -lart
+  282  cd lambda
+  283  ls -alrt
+  284  cd deep
+  285  ls -alrt
+  286  mdkir first_py
+  287  mkdir first_py
+  288  cd first_py/
+  289  ls -alrt
+  290  vi lambda_execution_policy.json
+  291  vi lambda_assume_role_policy.json
+  292  aws iam create-role --role-name LambdaIAMRole --description "Lambda Role" --assume-role-policy-document file://lambda_assume_role_policy.json
+  293  aws iam create-policy --policy-name LambdaRolePolicy --policy-document file://lambda_execution_policy.json
+  294  aws iam attach-role-policy --role-name "LambdaIAMRole" --policy-arn arn:aws:iam::384245390539:policy/LambdaRolePolicy
+  295  aws sns create-topic --name LambdaTopic --region us-east-1
+  296  aws sns subscribe --protocol "email" --topic-arn arn:aws:sns:us-east-1:384245390539:LambdaTopic  --notification-endpoint "Armin.Melchior@t-systems.com"  --region us-east-1
+  297  vi lambda_function.py
+  298  zip lambda_function.zip lambda_function.py
+  299  ls -lart
+  300  aws lambda create-function --memory-size 128 --function-name my-lambda --runtime python3.7 --handler lambda_function.lambda_handler --zip-file fileb://lambda_function.zip --role arn:aws:iam::384245390539:role/LambdaIAMRole
+  301  cat lambda_execution_policy.json
+  302  cat lambda_assume_role_policy.json 
+  303  cat lambda_function.py 
+  304  aws s3 mb s3://myfirstbucket-am-190721-1700
+  305  vi testfile.txt
+  306  aws s3 cp ./testfile.txt s3://myfirstbucket-am-190721-1700/text/testfile.txt
+  307  aws s3 ls
+  308  aws s3api get-bucket-acl --bucket
+  309  aws s3api get-bucket-acl help
+  310  aws s3api get-bucket-acl --bucket myfirstbucket-am-190721-1700
+  311  aws s3api get help
+  312  aws lambda add-permission --action lambda:InvokeFunction --principal s3.amazonaws.com --statement-id LabS3Trigger --function-name my-lambda --source-arn arn:aws:s3:::myfirstbucket-am-190721-1700
+  313  vim bucket-trigger-notification.json
+  314  aws lambda list-functions
+  315  vim bucket-trigger-notification.json
+  316  cat bucket-trigger-notification.json
+  317  aws s3api put-bucket-notification-configuration --bucket <S3_BUCKET_NAME> --notification-configuration file://bucket-trigger-notification.json
+  318  aws s3api put-bucket-notification-configuration --bucket arn:aws:s3:::myfirstbucket-am-190721-1700 --notification-configuration file://bucket-trigger-notification.json
+  319  aws s3api put-bucket-notification-configuration --bucket myfirstbucket-am-190721-1700 --notification-configuration file://bucket-trigger-notification.json
+  320  aws s3 cp ./testfile.txt s3://myfirstbucket-am-190721-1700/text/myfile.txt
+  321  ll
+  322  vi lambda_execution_policy.json
+  323  history | grep -i policy
+  324  aws iam put-role-policy --role-name "LambdaIAMRole" --policy-name LambdaRolePolicy --policy-document file://lambda_execution_policy.json
+  325  cat lambda_execution_policy.json 
+  326  aws s3 cp ./testfile.txt s3://myfirstbucket-am-190721-1700/text/myfile2.txt
+  327  fc -l -100
+  328  fc -l -100 | grep -i api
+  329  cat bucket-trigger-notification.json
+  330  aws s3api put-bucket-notification-configuration --bucket myfirstbucket-am-190721-1700  --notification-configuration file://bucket-trigger-notification.json
+  331  aws s3 cp ./testfile.txt s3://myfirstbucket-am-190721-1700/text/myfiler3.txt
+  332  aws s3 cp ./testfile.txt s3://myfirstbucket-am-190721-1700/myfiler3.txt
+  333  exit
+  334  aws configure
+  335  aws ec2 describe-instances
+  336  which aws_completer
+  337   echo $SHELL
+  338   export PATH=/home/cloud_user/.local/bin/aws_completer:$PATH
+  339  source ~/.bash_profile
+  340  complete -C '/home/cloud_user/.local/bin/aws_completer' aws
+  341  pwd
+  342  ls -alrt
+  343  cd lambda
+  344  ci autoc.sh
+  345  vi autoc.sh
+  346  chmod 755 autoc.sh 
+  347  ./autoc.sh 
+  348  c
+  349  cat ./autoc.sh 
+  350  cd ..
+  351  aws lambda list-function
+  352  aws lambda list-functions
+  353  aws iam list-roles
+  354  clear
+  355  aws iam list-roles
+  356  history | grep -i lambda | grep aws
+  357  history | grep -i lambda | grep version
+  358  history | grep -i lambda | grep alias
+  359  history | grep -i lambda | grep create
+  360  history | grep -i lambda | grep del
+  361  pwd
+  362  ll
+  363  cd lambda/
+  364  ls -alrt
+  365  cd deep
+  366  ls -lart
+  367  mkdir lambda_from_s3
+  368  cd lambda_from_s3/
+  369  vi lambda_function.py
+  370  zip lambda_function.zip lambda_function.py
+  371  cat lambda_function.py
+  372  ls -lart
+  373  aws s3 mb s3://myfirstbucket-am-200721-1700
+  374  aws s3 cp lambda_function.zip s3://myfirstbucket-am-200721-1700/lambdacode/lambda_function.zip
+  375  ## aws lambda create-function -- profile pro --region eu-central-1 --memory-size 128 --function-name my-lambda --runtime python3.7 --handler lambda_function.lambda_handler --code S3Bucket=<S3-BUCKET-Name>,S3Key=lambda_function.zip --timeout <X-SECONDS> --role <ROLE_ARN> --description "create a lambda function from S3 zip-file"
+  376  aws lambda create-function --memory-size 128 --function-name lambda-from-s3 --runtime python3.8  --handler lambda_function.lambda_handler --code S3Bucket=myfirstbucket-am-200721-1700,S3Key=lambdacode/lambda_function.zip --timeout 120 --role arn:aws:iam::158416907023:role/service-role/ShowName-role-1npv85gr --description "my first lambda function created from a S3 zip-file"
+  377  exit
+  378  cd lambda/
+  379  cd deep/
+  380  ls -l
+  381  cd lambda_from_s3/
+  382  ls -lart
+  383  fc -l -20
+  384  aws configure
+  385  aws s3 mb s3://myfirstbucket-am-200721-1700
+  386  aws s3 mb s3://myfirstbucket-am-200721-1730
+  387  aws s3 cp lambda_function.zip s3://myfirstbucket-am-200721-1700/lambdacode/lambda_function.zip
+  388  aws lambda create-function --memory-size 128 --function-name lambda-from-s3 --runtime python3.8  --handler lambda_function.lambda_handler --code S3Bucket=myfirstbucket-am-200721-1700,S3Key=lambdacode/lambda_function.zip --timeout 120 --role arn:aws:iam::129432529795:role/lambda_exec --description "my first lambda function created from a S3 zip-file"
+  389  aws lambda create-function --memory-size 128 --function-name lambda-from-s3 --runtime python3.8  --handler lambda_function.lambda_handler --code S3Bucket=myfirstbucket-am-200721-1730,S3Key=lambdacode/lambda_function.zip --timeout 120 --role arn:aws:iam::129432529795:role/lambda_exec --description "my first lambda function created from a S3 zip-file"
+  390  aws s3 cp lambda_function.zip s3://myfirstbucket-am-200721-1730/lambdacode/lambda_function.zip
+  391  aws lambda create-function --memory-size 128 --function-name lambda-from-s3 --runtime python3.8  --handler lambda_function.lambda_handler --code S3Bucket=myfirstbucket-am-200721-1730,S3Key=lambdacode/lambda_function.zip --timeout 120 --role arn:aws:iam::129432529795:role/lambda_exec --description "my first lambda function created from a S3 zip-file"
+  392  cd ..
+  393  mkdir invoke_lambds
+  394  mv invoke_lambds invoke_lambda
+  395  cd invoke_lambda/
+  396  vi test.json
+  397  cat test.json 
+  398  cd ..
+  399  ll
+  400  ls -lart
+  401  cd ..
+  402  ls -lart
+  403  ./autoc.sh 
+  404  cd deep
+  405  cd invoke_lambda/
+  406  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json --invokation-type DryRun output.json
+  407  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json --invokation-type DryRun 
+  408  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json --invocation-type DryRun output.json
+  409  ll
+  410  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json output.json
+  411  ll
+  412  cat output.json 
+  413  vi test.json
+  414  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json output.json
+  415  cat output.json 
+  416  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json 
+  417  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json output.json
+  418  cat output.json 
+  419  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json test.out --output jsdon
+  420  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json test.out --output json
+  421  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json test.out --output table
+  422  ll
+  423  cat test.out 
+  424  exit
+  425  aws configure
+  426  aws s3 ls
+  427  cd lambda/
+  428  ll
+  429  cat autoc.sh 
+  430  export PATH=/home/cloud_user/.local/bin/aws_completer:$PATH
+  431  source ~/.bash_profile
+  432  complete -C '/home/cloud_user/.local/bin/aws_completer' aws
+  433  aws s3 ls 
+  434  aws ec2 describe-instances
+  435  ls -lart
+  436  cd deep
+  437  mkdir pull_events_cr_map
+  438  ll
+  439  cd pull_events_cr_map/
+  440  history > ./cmds_210721
+  441  ll
+  442  tail cmds_210721 
+  443  aws iam create-role help
+  444  # aws iam create-role --role-name Test-Role --assume-role-policy-document file://Test-Role-Trust-Policy.json
+  445  vi lambda_role.json
+  446  # aws iam create-role --role-name LambdaDynamoDBRole --assume-role-policy-document file://LambdaDynamoDBStreamRole.json
+  447  mv lambda_role.json LambdaDynamoDBStreamRole.json
+  448  aws iam create-role --role-name LambdaDynamoDBRole --assume-role-policy-document file://LambdaDynamoDBStreamRole.json
+  449  vi LambdaDynamoDBStreamRole.json
+  450  aws iam create-role --role-name LambdaDynamoDBRole --assume-role-policy-document file://LambdaDynamoDBStreamRole.json
+  451  vi LambdaDynamoDBStreamRole.json
+  452  aws iam create-role --role-name LambdaDynamoDBRole --assume-role-policy-document file://LambdaDynamoDBStreamRole.json
+  453  vi LambdaDynamoDBStreamRole.json
+  454  aws iam create-role --role-name LambdaDynamoDBRole --assume-role-policy-document file://LambdaDynamoDBStreamRole.json
+  455  cat LambdaDynamoDBStreamRole.json
+  456  aws iam put-role-policy help
+  457  # aws iam put-role-policy --role-name Test-Role --policy-name ExamplePolicy --policy-document file://AdminPolicy.json
+  458  vi LambdaDynamoDBStreamPolicy.json
+  459  cat LambdaDynamoDBStreamPolicy.json
+  460  aws iam put-role-policy --role-name LambdaDynamoDBRole -policy-name LambdaDynamoDB --policy-document file://LambdaDynamoDBStreamPolicy.json
+  461  clear
+  462  aws iam put-role-policy --role-name LambdaDynamoDBRole -policy-name LambdaDynamoDB --policy-document file:///LambdaDynamoDBStreamPolicy.json
+  463  aws --version
+  464  cd ..
+  465  mkdir aws_cli2_update
+  466  cd aws_cli2_update/
+  467  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+  468  ll
+  469  unzip awscliv2.zip
+  470  which aws
+  471  ls -lart ~/.local/bin/aws
+  472  ls -lart /usr/local/bin/aws
+  473  ls -lart /usr/local/bin
+  474  ls -lart ~/.local/bin/aws
+  475  sudo ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update
+  476  aws --version
+  477  echo $PATH
+  478  sudo ./aws/install --bin-dir /home/cloud_user/.local/bin --install-dir /home/cloud_user/.local/bin/aws --update
+  479  /usr/local/bin/aws --version
+  480  cd /home/cloud_user/.local/bin
+  481  ls -lart
+  482  cd aws
+  483  my aws aws.org
+  484  mv aws aws.org
+  485  aws --version
+  486  cd /usr/local/bin
+  487  ls -lart aws*
+  488  ls -lart usr/local/aws-cli/v2/current/bin/aws
+  489  ls -lart /usr/local/aws-cli/v2/current/bin/aws
+  490  ls -lart /usr/local/aws-cli/v2/current/dist/aws
+  491  cp /usr/local/aws-cli/v2/current/dist/aws /home/cloud_user/.local/bin/aws
+  492  aws --version
+  493  sudo ./aws/install --bin-dir /home/cloud_user/.local/bin --install-dir /home/cloud_user/.local/bin/aws --update
+  494  cd
+  495  cd lambda/
+  496  cd ls
+  497  ll
+  498  cd aws_cli2_update/
+  499  sudo ./aws/install --bin-dir /home/cloud_user/.local/bin --install-dir /home/cloud_user/.local/bin/aws --update
+  500  sudo ./aws/install --bin-dir /home/cloud_user/.local/bin --install-dir /home/cloud_user/.local/bin --update
+  501  aws --version
+  502  ls -lart
+  503  cd ..
+  504  cd deep/
+  505  cd pull_events_cr_map/
+  506  ll
+  507  aws iam put-role-policy --role-name LambdaDynamoDBRole -policy-name LambdaDynamoDB --policy-document file:///LambdaDynamoDBStreamPolicy.json
+  508  aws iam put-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDynamoDB --policy-document file:///LambdaDynamoDBStreamPolicy.json
+  509  aws iam put-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDynamoDB --policy-document file://LambdaDynamoDBStreamPolicy.json
+  510  aws iam get-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDyLambdaDynamoDB
+  511  aws iam get-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDynamoDB
+  512  clear
+  513  aws iam get-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDynamoDB
+  514  aws iam list-role help
+  515  aws iam list-roles help
+  516  aws iam list-roles
+  517  aws iam list-roles help 
+  518  aws iam list-roles ----path-prefix /La/
+  519  aws iam list-roles ----path-prefix=/La/
+  520  aws iam list-roles ----path-prefix="La"
+  521  aws iam list-roles ----path-prefix="/"
+  522  aws iam list-roles help 
+  523  aws iam list-roles ----path-prefix /
+  524  aws iam list-roles < grep -i Lamb
+  525  aws iam list-roles | grep -i Lamb
+  526  aws iam list-roles ----path-prefix /LambdaDynamoDBRole/
+  527  aws iam list-roles ----path-prefix /
+  528  aws iam list-roles ----path-prefix //
+  529  aws iam list-roles --path-prefix /aws-service-role/
+  530  aws iam list-roles help 
+  531  aws iam get-role --role-name LambdaDynamoDBRole --query 'Role.[RoleName, Arn]' --output text
+  532  vi lambda_function.py
+  533  zip lambda_function.zip lambda_function.py
+  534  cat history | grep create-funct
+  535  history | grep create-funct
+  536  aws lambda create-function --function-name SynamoDBStreamLog --runtime python3.8 -role arn:aws:iam::382835454016:role/LambdaDynamoDBRole --handler lambda_function.lambda_handler --zip-file fileb://lambda_function.zip --timeout 120 --memory-size 512 --description "lambda function to pull event from dynamodb"
+  537  aws lambda create-function --function-name DynamoDBStreamLog --runtime python3.7 --role arn:aws:iam::382835454016:role/LambdaDynamoDBRole --handler lambda_function.lambda_handler --zip-file fileb://lambda_function.zip --timeout 120 --memory-size 512 --description "lambda function to pull event from dynamodb"
+  538  history | grep invoke
+  539  vi dynamo_stream_update.json
+  540  aws lambda invoke --function-name DynamoDBStreamLog --payload file://dynamo_stream_update.json output_dynamo.json
+  541  vi dynamo_stream_update.json
+  542  aws lambda invoke --function-name DynamoDBStreamLog --payload file://dynamo_stream_update.json output_dynamo.json
+  543  aws lambda invoke --function-name DynamoDBStreamLog --payload file://dynamo_stream_update.json
+  544  aws lambda invoke --function-name DynamoDBStreamLog --payload file://dynamo_stream_update.json out.json
+  545  ll
+  546  aws lambda list-event-source-mappings 
+  547  aws lambda create-event-source-mappings help
+  548  aws lambda create-event-source-mapping help
+  549  aws lambda create-event-source-mapping --event-source-arn arn:aws:dynamodb:us-east-1:382835454016:table/la-lambda-table/stream/2021-07-21T12:50:57.062 --function-name DynamoDBStreamLog --enable --starting-position LATEST
+  550  aws lambda create-event-source-mapping help
+  551  aws lambda list-event-source-mappings 
+  552  !
+  553  aws lambda invoke --function-name DynamoDBStreamLog --payload file://dynamo_stream_update.json out.json
+  554  aws lambda invoke --cli-binary-format raw-in-base64-out --function-name DynamoDBStreamLog --payload file://dynamo_stream_update.json out.json
+  555  aws lambda list-event-source-mappings 
+  556  aws configure
+  557  aws lambda list-event-source-mappings 
+  558  fc -l -100
+  559  # aws iam put-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDynamoDB --policy-document file://LambdaDynamoDBStreamPolicy.json
+  560  aws iam put-role-policy --role-name LambdaDynamoDBRole -policy-name LambdaDynamoDB --policy-document file:///LambdaDynamoDBStreamPolicy.json
+  561  aws iam put-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDynamoDB --policy-document file:///LambdaDynamoDBStreamPolicy.json
+  562  aws iam put-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDynamoDB --policy-document file://LambdaDynamoDBStreamPolicy.json
+  563  fc -l -120
+  564  aws iam create-role --role-name LambdaDynamoDBRole --assume-role-policy-document file://LambdaDynamoDBStreamRole.json
+  565  aws iam put-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDynamoDB --policy-document file://LambdaDynamoDBStreamPolicy.json
+  566  aws iam get-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDynamoDB
+  567  aws iam get-role --role-name LambdaDynamoDBRole --query 'Role.[RoleName, Arn]' --output text
+  568  LambdaDynamoDBRole      arn:aws:iam::595438810944:role/LambdaDynamoDBRole
+  569  aws lambda create-function --function-name DynamoDBStreamLog --runtime python3.7 --role arn:aws:iam::595438810944:role/LambdaDynamoDBRole  --handler lambda_function.lambda_handler --zip-file fileb://lambda_function.zip --timeout 120 --memory-size 512 --description "lambda function to pull event from dynamodb"
+  570  ls -alrt
+  571  vi PullDynamoDBEventTest.json
+  572  cat PullDynamoDBEventTest.json
+  573  fc -l -100 |  grep -i invoke
+  574  aws lambda invoke --function-name DynamoDBStreamLog --payload file://PullDynamoDBEventTest.json test_output.json
+  575  aws lambda invoke --cli-binary-format raw-in-base64-out --function-name DynamoDBStreamLog --payload file://PullDynamoDBEventTest.json test_output.json
+  576  cat test_output.json
+  577  ll
+  578  cat lambda_function.py
+  579  vi lambda_function.py
+  580  zip lambda_function.zip lambda_function.py
+  581  aws lambda invoke --cli-binary-format raw-in-base64-out --function-name DynamoDBStreamLog --payload file://PullDynamoDBEventTest.json test_output.json
+  582  cat test_output.json
+  583  aws lambda create-event-source-mapping --event-source-arn arn:aws:dynamodb:us-east-1:595438810944:table/la-lambda-table/stream/2021-07-21T14:50:01.938 --function-name DynamoDBStreamLog --enable --starting-position LATEST
+  584  aws logs describe-log-groups 
+  585  aws logs describe-log-streams --log-group-name /aws/lambda/DynamoDBStreamLog
+  586  aws logs describe-log-streams --log-group-name /aws/lambda/DynamoDBStreamLog --log-stream-name-prefix 2021/07/21
+  587  aws logs get-log-events --log-group-name /aws/lambda/DynamoDBStreamLog --log-stream-name 2021/07/21/[$LATEST]55da41aa77684e0c99fd824cd18b0c66 --output text
+  588  aws logs get-log-events --log-group-name /aws/lambda/DynamoDBStreamLog --log-stream-name 2021/07/21/55da41aa77684e0c99fd824cd18b0c66 --output text
+  589  logstreams=$(aws logs describe-log-streams --log-group-name /aws/lambda/DynamoDBStreamLog --output text --query 'logstreamx[*].logStreamName')
+  590  echo $logstreams
+  591  logstreams=$(aws logs describe-log-streams --log-group-name /aws/lambda/DynamoDBStreamLog --output text --query 'logstreame[*].logStreamName')
+  592  echo $logstreams
+  593  logstreams=$(aws logs describe-log-streams --log-group-name /aws/lambda/DynamoDBStreamLog --output text --query 'logstreams[*].logStreamName')
+  594  echo $logstreams
+  595  logstreams=$(aws logs describe-log-streams --log-group-name /aws/lambda/DynamoDBStreamLog --output text --query 'logStreams[*].logStreamName')
+  596  echo $logstreams
+  597  for log_stream in $logstreams; do aws logs get_log_events --log-group-name /aws/lambda/DynamoDBStreamLog --log-stream-name $log_stream; done
+  598  for log_stream in $logstreams; do aws logs get-log-events --log-group-name /aws/lambda/DynamoDBStreamLog --log-stream-name $log_stream ; done
+  599  for log_stream in $logstreams; do aws logs get-log-events --log-group-name /aws/lambda/DynamoDBStreamLog --log-stream-name $log_stream --output text --query 'events[*].message; done
+  600  for log_stream in $logstreams; do aws logs get-log-events --log-group-name /aws/lambda/DynamoDBStreamLog --log-stream-name $log_stream --output text --query 'events[*].message'; done
+  601  logstreams=$(aws logs describe-log-streams --log-group-name /aws/lambda/DynamoDBStreamLog --output text --query 'logStreams[*].logStreamName') && for log_stream in $logstreams; do aws logs get-log-events --log-group-name /aws/lambda/DynamoDBStreamLog --log-stream-name $log_stream --output text --query 'events[*].message'; done
+  602  cd lambda/
+  603  cd deep
+  604  ls
+  605  ls -lart
+  606  history > cmds_220721
+  607  ll
+  608  pwd
+  609  exit
+  610  pwd
+  611  cd lambda/
+  612  cd deep
+  613  ls -lart
+  614  mkdir cloudwatch_events
+  615  cd cloud
+  616  cd cloudwatch_events/
+  617  ll
+  618  vi lambda_function.py
+  619  vi test_event.json
+  620  cd ..
+  621  mkdir lambda_sns_cloudwatch
+  622  cd lambda_sns_cloudwatch/
+  623  ls -lart
+  624  vi lambda_function_fail.py
+  625  exit
+  626  aws s3 ls
+  627   $(aws ecr get-login-password --region us-east-1)
+  628  aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 004100267215.dkr.ecr.us-east-1.amazonaws.com
+  629   $(aws ecr get-login-password --no-include-email --region us-east-1)
+  630   $(aws ecr get-login --no-include-email --region us-east-1)
+  631  exit
+  632  docker -v
+  633  sudo su
+  634  aws configure
+  635  aws s3 ls
+  636  cd lambda/
+  637  ls -lart
+  638  cat autoc.sh
+  639  export PATH=/home/cloud_user/.local/bin/aws_completer:$PATH
+  640  source ~/.bash_profile
+  641  complete -C '/home/cloud_user/.local/bin/aws_completer' aws
+  642  aws lambda list-functions
+  643  sudo yum install zip
+  644  sudo yum -y install unzip
+  645  pwd
+  646  cd deep/
+  647  ls -alrt
+  648  mkdir ec2_automated_creation_by_lambda
+  649  mv ec2_automated_creation_by_lambda ecs_automated_creation_by_lambda
+  650  ll
+  651  cd ecs_automated_creation_by_lambda/
+  652  mkdir docker
+  653  cd docker/
+  654  wget https://github.com/linuxacademy/content-lambda-deep-dive/raw/master/section_6/live_activity_12/docker-app.zip
+  655  ls -lart
+  656  unzip docker-app.zip 
+  657  ls -lart
+  658  cat Dockerfile 
+  659  find .
+  660  cat ./static-html-directory/index.html
+  661  aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 004100267215.dkr.ecr.us-east-1.amazonaws.com
+  662  aws ecr get-login-password --region us-east-1
+  663  $(aws ecr get-login-password --region us-east-1)
+  664  id
+  665  bash
+  666  aws ecr get-get-login-password
+  667  aws ecr get--login-password
+  668  aws ecr get-login-password
+  669  passwd=`aws ecr get-login-password --region us-east-1 `
+  670  echo $passwd
+  671  docker login --username AWS --password `echo $passwd` 004100267215.dkr.ecr.us-east-1.amazonaws.com
+  672  aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 004100267215.dkr.ecr.us-east-1.amazonaws.com
+  673  sudo su
+  674  sudo groupadd docker
+  675  sudo usermod -aG docker cloud_user
+  676  docker run hello-world
+  677  ls -lart ~/.docker/
+  678  su -s cloud_user
+  679  echo $HOME
+  680  mkdir /home/cloud_user/.docker
+  681  ls -lart ~/.docker/
+  682  docker run hello-world
+  683  docker run --help
+  684   
+  685  sudo chown "cloud_user:cloud_user" /home/cloud_user/.docker -R
+  686  udo chmod g+rwx /home/cloud_user/.docker -R
+  687  sudo chmod g+rwx /home/cloud_user/.docker -R
+  688  docker run --help
+  689  docker run hello-world
+  690  exit
+  691  docker run hello-world
+  692  sudo chmod 666 /var/run/docker.sock
+  693  ls -lart /var/run/docker.sock
+  694  ls -alrt /run/podman/podman.sock
+  695  chmod 777 chmod /run/podman/podman.sock
+  696  sudo su
+  697  docker run hello-world
+  698  sudo su
+  699  docker run hello-world
+  700  aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 004100267215.dkr.ecr.us-east-1.amazonaws.com
+  701  aws configure
+  702  aws s3 ls
+  703  aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 228005282823.dkr.ecr.us-east-1.amazonaws.com
+  704  pwd
+  705  cd lambda/
+  706  cd deep/
+  707  cd ecs_automated_creation_by_lambda/
+  708  cd do
+  709  cd docker/
+  710  la -lart
+  711  ls -lart
+  712  docker build -t hello .
+  713  docker tag hello:latest 228005282823.dkr.ecr.us-east-1.amazonaws.com/hello:latest
+  714  docker push 228005282823.dkr.ecr.us-east-1.amazonaws.com/hello:latest
+  715  sudo su
+  716  ls -lart
+  717  cd ..
+  718  ls -lart
+  719  mkdir lambda_func
+  720  cd lambda_func/
+  721   wget https://raw.githubusercontent.com/linuxacademy/content-lambda-deep-dive/master/section_6/live_activity_12/lambda_function.py
+  722  ls -lart
+  723  zip lambda_function.zip lambda_function.py
+  724  [cloud_user@arminmelchior1c lambda_func]$ ls -lart
+  725  total 4
+  726  drwxrwxr-x. 4 cloud_user cloud_user   39 Jul 23 13:45 ..
+  727  -rw-r--r--. 1 cloud_user docker     2021 Jul 23 13:45 lambda_function.py
+  728  drwxr-xr-x. 2 cloud_user docker       32 Jul 23 13:45 .
+  729  [cloud_user@arminmelchior1c lambda_func]$ zip lambda_function.zip lambda_function.py
+  730  ls -l
+  731  aws lambda create-function --function-name ECS --handler lambda_function.lambda_handler --memory-size 1024 --timeout 15 --runtime python3.6 --zip-file fileb://lambda_function.zip --role arn:aws:iam::228005282823:role/lambda_exec_role_LA --environment Variables="{NAME=secondcontainer,IMAGE=URI,TASK_DEF=linuxtaskdef,CLUSTER=linuxcluster,SERVICE=linuxservice}"
+  732  cd ..
+  733  cd docker/
+  734  ls -la
+  735  cd static-html-directory/
+  736  ls -l
+  737  vi index.html 
+  738  docker build -t hello .
+  739  cd ..
+  740  docker build -t hello .
+  741  # docker push 228005282823.dkr.ecr.us-east-1.amazonaws.com/hello:latest
+  742  docker tag hello:latest 228005282823.dkr.ecr.us-east-1.amazonaws.com/hello:latest
+  743  docker push 228005282823.dkr.ecr.us-east-1.amazonaws.com/hello:latest
+  744  ll
+  745  cd static-html-directory/
+  746  vi index.html 
+  747  cd ..
+  748  docker build -t hello .
+  749  docker tag hello:latest 228005282823.dkr.ecr.us-east-1.amazonaws.com/hello:latest
+  750  docker push 228005282823.dkr.ecr.us-east-1.amazonaws.com/hello:latest
+  751  exit
+  752  docker run hello-world
+  753  sudo groupadd docker
+  754   sudo usermod -aG docker cloud_user
+  755  newgrp docker
+  756  exit
+  757  pip3
+  758  pip3 --version
+  759  python3 --version
+  760  docker -v
+  761  pip3 install aws-sam-cli
+  762  pip3 install os
+  763  ls -lart /usr/local/lib/python3.6
+  764  ls -lart /usr/local/lib/
+  765  sudo su
+  766  pip3 install aws-sam-cli
+  767  sudo su
+  768  pip3 install aws-sam-cli
+  769  sudo su
+  770  pip3 install aws-sam-cli
+  771  # pip3 install aws-sam-cli
+  772  sudo su
+  773  sudo pip3 install aws-sam-cli
+  774  pip3 install aws-sam-cli
+  775  mkdir history
+  776  cd history/
+  777  history > ./cmds_280721
+  778  sudo su
+  779  ls -alrt
+  780  history > ./cmds_280721
+  781  ls a-lrt
+  782  ls -alrt
+  783  sudo su
+  784  ls -alrt
+  785  sudo su
+  786  ls -alrt
+  787  docker ps
+  788  sudo service docker start
+  789  docker ps
+  790  sudo usermod -a -G docker cloud_user
+  791  docker ps
+  792  sam --version
+  793  fc -l -5
+  794  curl -s http://169.254.169.254/latest/meta-data/iam
+  795  curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials
+  796  curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/ssmRole
+  797  sam local start-api
+  798  cd ..
+  799  sam local start-api
+  800  sam init
+  801  ls -alrt
+  802  cd sam-test/
+  803  find 
+  804  cat ./events/event.json
+  805  find 
+  806  cat ./template.yaml
+  807  find 
+  808  cat ./hello_world/app.py
+  809  find 
+  810  cat ./tests/requirements.txt
+  811  sam build
+  812  find .
+  813  ls -lart
+  814  sam deploy --guided
+  815  aws configure
+  816  sam deploy --guided
+  817  curl https://j197tnpsv9.execute-api.us-east-1.amazonaws.com/Prod/hello/
+  818  clear
+  819  sam local start-api
+  820  pwd
+  821  ps
+  822  sam local start-api
+  823  cd ..
+  824  sam local start-api
+  825  cd sam-test/
+  826  sam local start-api
+  827  cd ..
+  828  rm -rf ./sam-test/
+  829  sam init
+  830  cat ./sam-app/README.md
+  831  cd sam-app
+  832  sam build
+  833  sam local invoke
+  834  sam local start-api
+  835  clear
+  836  sam local start-api
+  837  exit
+  838  curl http://127.0.0.1:3000/hello
+  839  sam local invoke "HelloWorldFunction" -e events/event.json
+  840  cd sam-app/
+  841  sam local invoke "HelloWorldFunction" -e events/event.json
+  842  curl http://127.0.0.1:3000/products
+  843  curl http://127.0.0.1:3000/HelloWorld
+  844  curl http://127.0.0.1:3000/hello
+  845  clear
+  846  curl http://127.0.0.1:3000/hello
+  847  exit
+  848  cd sam-app/
+  849  ls -lart
+  850  sam local start-api
+  851  exit
+  852  curl http://127.0.0.1:3000/hello
+  853  cd sam-app/
+  854  ls -alrt
+  855  cd hello_world/
+  856  ls -al
+  857  vi app.py
+  858  cd ..
+  859  curl http://127.0.0.1:3000/hello
+  860  find . -name "*app*"
+  861  vi ./.aws-sam/build/HelloWorldFunction/app.py
+  862  curl http://127.0.0.1:3000/hello
+  863  cat ./.aws-sam/build/HelloWorldFunction/app.py
+  864  curl http://127.0.0.1:3000/hello
+  865  ls -lart
+  866  sam local invoke "HelloWorldFunction" -e events/event.json
+  867  cat events/event.json
+  868  sam local generate-event api
+  869  sam local generate-event
+  870  sam local generate-event s3
+  871  sam local generate-event s3 put
+  872  ls -la
+  873  vi template.yaml
+  874  cp template.yaml template.yaml-org
+  875  vi template.yaml
+  876  sam local invoke "Linux" -e events/event.json
+  877  vi template.yaml
+  878  find . -name template.yaml
+  879  vi ./.aws-sam/build/template.yaml
+  880  sam local invoke "Linux" -e events/event.json
+  881  vi ./.aws-sam/build/template.yaml
+  882  sam validate
+  883  aws s3 ls
+  884  sam package --template-file template.yaml
+  885  sam package --template-file template.yaml --output-template-file serverless-output.yaml --s3-bucket aws-sam-cli-managed-default-samclisourcebucket-1lns0ya2yri1l
+  886  ls -lart
+  887  cat serverless-output.yaml
+  888  date
+  889  exit
+  890  cd lambda/
+  891  ls -lart
+  892  cd deep
+  893  ls -lart
+  894  cd invoke_lambda
+  895  ls -l
+  896  cd ..
+  897  find .
+  898  ls -l
+  899  cd zap1
+  900  ls -alrt
+  901  cat *py
+  902  cd ..
+  903  cd deep/
+  904  ls -lart
+  905  history |  grep -i payloa
+  906  cd ..
+  907  ls -alrt
+  908  cd deep
+  909  find . -name "*test.js*"
+  910  cd invoke*
+  911  ls -lart
+  912  cat test*
+  913  history |  grep -i lambda-from-s3
+  914  cd ..
+  915  find . -name "*lambda_function.zip*"
+  916  cd lambda_from_s3/
+  917  ls -lart
+  918  cat *py
+  919  cat lambda_function.py
+  920  history | grep -i zip
+  921  cd ..
+  922  ls -alrt
+  923  mkdir cr_zab_host_with_payload
+  924  cd cr_zab_host_with_payload/
+  925  ls -alrt
+  926  vi event.json
+  927  cd ../lambda_from_s3
+  928  ls -alrt
+  929  cp *py ../cr_zab_host_with_payload/
+  930  cd ../cr_zab_host_with_payload/
+  931  ls -alrt
+  932  cp lambda_function.py lambda_function.org
+  933  vi lambda_function.py
+  934  cd ..
+  935  cd zap1/
+  936  ls -lart
+  937  cat *py
+  938  cd ..
+  939  cd deep/
+  940  cd cr_zab_host_with_payload/
+  941  cat *py
+  942  ls -alrt
+  943  cat eve*
+  944  ls -lart
+  945  vi *py
+  946  vi event.json 
+  947  exit
+  948  pwd
+  949  cd lambda/
+  950  cd deep/
+  951  ls -lart
+  952  mkdir aws_cli_alias_version
+  953  cd aws_cli_alias_version/
+  954  ls -lart
+  955  aws configure
+  956  aws ec2 describe-instnaces
+  957  aws ec2 describe-instances
+  958  vi lambda_function.py
+  959  zip lambda_function.zip lambda_function.py
+  960  ls -lart
+  961  vi cmd
+  962  cat cmd
+  963  pwd
+  964  aws lambda create-function --function-name SnapShot --description "Taking EBS Snaps" --memory-size 1024 --timeout 10 --handler lambda_function.handler --runtime "python3.6" --role arn:aws:iam::976645251061:role/lambda_exec_role_LA --zip-file fileb:///home/cloud_user/lambda/deep/aws_cli_alias_version/lambda_function.zip --region us-east-1
+  965  aws lambda publish-version --function-name SnapShot --region us-east-1
+  966  aws lambda list-versions-by-function --function-name SnapShot
+  967  aws lambda list-versions-by-function --function-name SnapShot | grep -i version
+  968  aws lambda create-alias --function-name SnapShot --description "Production Alias" --function-version 1 --name PROD --region us-east-1
+  969  aws lambda list-aliases --function-name SnapShot --region us-east-1
+  970  aws lambda add-permission --function-name SnapShot --qualifier PROD --statement-id 001 --principal events.amazonaws.com --action lambda:InvokeFunction --region us-east-1
+  971  aws events put-rule --name "EC2-SNAP" --schedule-expression "rate(2 minutes)" --state "ENABLED" --description "Takes EBS Snapshot of volumes on a schedules basis." --region us-east-1
+  972  aws events put-targets --rule "EC2-SNAP" --targets "Id"="1","Arn"="arn:aws:lambda:us-east-1:625795409439:function:SnapShot:PROD" --region us-east-1
+  973  aws events put-targets --rule "EC2-SNAP" --targets "Id"="1","Arn"="arn:aws:lambda:us-east-1:976645251061:function:SnapShot:PROD" --region us-east-1
+  974  date
+  975  aws events disable-rule --name EC2-SNAP --region us-east-1
+  976  vi lambda_function1_py
+  977  cat lambda_function.
+  978  cat lambda_function.py 
+  979  ls -lart 
+  980  cp lambda_function.py lambda_function2.py
+  981  cp lambda_function1_py lambda_function.py
+  982  fc -l -100 | grep -i zip
+  983  zip lambda_function.zip lambda_function.py
+  984  ls -lart 
+  985  cat cmd
+  986  aws lambda update-function-code --function-name SnapShot --zip-file fileb:///home/cloud_user/lambda_function.zip --region us-east-1
+  987  pwd
+  988  aws lambda update-function-code --function-name SnapShot --zip-file fileb:///home/cloud_user/lambda/deep/aws_cli_alias_version/lambda_function.zip --region us-east-1
+  989  aws lambda publish-version --function-name SnapShot --region us-east-1
+  990  aws lambda update-alias --function-name SnapShot --name PROD --function-version 2 --region us-east-1
+  991  aws lambda list-aliases --function-name SnapShot --region us-east-1
+  992  aws events enable-rule --name EC2-SNAP --region us-east-1
+  993  ls -alrt
+  994  cd ..
+  995  mkdir revert_unauthorized_sg
+  996  cd rev
+  997  cd revert_unauthorized_sg/
+  998  exit
+  999  cd lambda/
+ 1000  cd deep/
+ 1001  ls -lart
+ 1002  mkdir canary_code_weighting
+ 1003  cd canary_code_weighting/
+ 1004  ls -lart
+ 1005  vi lambda_function_1.py
+ 1006  vi lambda_function_2.py
+ 1007  zip lambda_function_1.zip lambda_function_1.py
+ 1008  zip lambda_function_2.zip lambda_function_2.py
+ 1009  aws configure
+ 1010  aws s3 ls
+ 1011  aws ec2 describe-instances
+ 1012  ls -lart
+ 1013  cd ..
+ 1014  ls -lart
+ 1015  cd ecs_automated_creation_by_lambda
+ 1016  ls -alrt
+ 1017  cd docker
+ 1018  ls -alrt
+ 1019  cd ..
+ 1020  cd lambda_func/
+ 1021  ls -lart
+ 1022  cp lam* ..
+ 1023  ls -lart
+ 1024  cd ..
+ 1025  ls -l
+ 1026  cd socker
+ 1027  cd docker/
+ 1028  ll
+ 1029  pwd
+ 1030  cd ..
+ 1031  aws configure
+ 1032  aws s3 ls
+ 1033  cd docker/
+ 1034  ls -lart
+ 1035  docker -v
+ 1036  aws s3 list
+ 1037  aws s3 ls
+ 1038  ls -lart
+ 1039  cd static-html-directory/
+ 1040  ls -lart
+ 1041  vi index.html
+ 1042  cd ..
+ 1043  cat Dockerfile 
+ 1044  aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 644808427317.dkr.ecr.us-east-1.amazonaws.com
+ 1045  docker build -t hello .
+ 1046  sudo
+ 1047  sudo -s
+ 1048  docker build -t hello .
+ 1049  [cloud_user@arminmelchior1c docker]$ docker build -t hello .
+ 1050  cat Dockerfi
+ 1051  docker build -t hello .
+ 1052  docker tag hello:latest 644808427317.dkr.ecr.us-east-1.amazonaws.com/hello:latest
+ 1053  docker push 644808427317.dkr.ecr.us-east-1.amazonaws.com/hello:latest
+ 1054  ls -lart
+ 1055  cd ..
+ 1056  cd docker/
+ 1057  ls -lart
+ 1058  cd ..
+ 1059  ll
+ 1060  cat lambda_function.py
+ 1061  ll
+ 1062  aws lambda create-function --function-name ECS --handler lambda_function.lambda_handler --memory-size 1024 --timeout 15 --runtime python3.6 --zip-file fileb:///home/user/lambda_function.zip \
+ 1063  pwd
+ 1064  aws lambda create-function --function-name ECS --handler lambda_function.lambda_handler --memory-size 1024 --timeout 15 --runtime python3.6 --zip-file fileb://home/cloud_user/lambda/deep/ecs_automated_creation_by_lambda/lambda_function.zip
+ 1065  aws lambda create-function --function-name ECS --handler lambda_function.lambda_handler --memory-size 1024 --timeout 15 --runtime python3.6 --zip-file fileb://home/cloud_user/lambda/deep/ecs_automated_creation_by_lambda/lambda_function.zip --role arn:aws:iam::644808427317:role/lambda_exec_role_LA --environment Variables="{NAME=secondcontainer,IMAGE=URI,TASK_DEF=linuxtaskdef,CLUSTER=linuxcluster,SERVICE=linuxservice}"
+ 1066  aws lambda create-function --function-name ECS --handler lambda_function.lambda_handler --memory-size 1024 --timeout 15 --runtime python3.6 --zip-file fileb:///home/cloud_user/lambda/deep/ecs_automated_creation_by_lambda/lambda_function.zip --role arn:aws:iam::644808427317:role/lambda_exec_role_LA --environment Variables="{NAME=secondcontainer,IMAGE=URI,TASK_DEF=linuxtaskdef,CLUSTER=linuxcluster,SERVICE=linuxservice}"
+ 1067  cd dock
+ 1068* 
+ 1069  ls -lart
+ 1070  cd static-html-directory/
+ 1071  ls -alrt
+ 1072  cp index.html index.html.org
+ 1073  vi index.html
+ 1074  cd ..
+ 1075  docker build -t hello .
+ 1076  docker tag hello:latest 644808427317.dkr.ecr.us-east-1.amazonaws.com/hello:latest
+ 1077  docker push 644808427317.dkr.ecr.us-east-1.amazonaws.com/hello:latest
+ 1078  # sha256:9fbe5a8e9cb70655e50cea527c1ad51fb77d1b3953f9abb276ad85f2f6e2ecee
+ 1079  ls -lart
+ 1080  cd static-html-directory/
+ 1081  vi index.html
+ 1082  cd ..
+ 1083  docker build -t hello .
+ 1084  docker tag hello:latest 644808427317.dkr.ecr.us-east-1.amazonaws.com/hello:latest
+ 1085  docker push 644808427317.dkr.ecr.us-east-1.amazonaws.com/hello:latest
+ 1086  pwd
+ 1087  cd ..
+ 1088  ls -lart
+ 1089  mkdir python3_sysadmin
+ 1090  mkdir important
+ 1091  mv ./lambda ./important/
+ 1092  mv python3_sysadmin/ ./important/
+ 1093  cd sam-app
+ 1094  ls -lart
+ 1095  cd ..
+ 1096  mv ./sam-app ./important/
+ 1097  ls -lart
+ 1098  cd myrepo
+ 1099  ls -lart
+ 1100  cd ..
+ 1101  cd content-source-control-git/
+ 1102  ls -lart
+ 1103  cd src
+ 1104  ls -lart
+ 1105  cd ..
+ 1106  ls -lart
+ 1107  cd fs-photos/
+ 1108  ls -lart
+ 1109  cd test
+ 1110  ls -lart
+ 1111  cd ..
+ 1112  ls -lart
+ 1113  cd web-api
+ 1114  ls -lart
+ 1115  cd ..
+ 1116  cd web-api-test/
+ 1117  ls -lart
+ 1118  cd ..
+ 1119  ls -lart
+ 1120  cd deploy_iac_tf_ansible/
+ 1121  ls -lart
+ 1122  cd ..
+ 1123  ls -lart
+ 1124  cd repos
+ 1125  ls -alrt
+ 1126  cd ..
+ 1127  ls -alrt
+ 1128  cd source/
+ 1129  ls -alrt
+ 1130  cd ..
+ 1131  ls -lart
+ 1132  cd important 
+ 1133  history > cmds_040821.log

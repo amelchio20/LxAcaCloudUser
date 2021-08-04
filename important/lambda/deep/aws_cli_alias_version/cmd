@@ -1,0 +1,1 @@
+aws lambda create-function --function-name SnapShot --description "Taking EBS Snaps" --memory-size 1024 --timeout 10 --handler lambda_function.handler --runtime "python3.6" --role "<lambda_exec_role_LA_ARN>" --zip-file fileb:///home/cloud_user/lambda_function.zip --region us-east-1

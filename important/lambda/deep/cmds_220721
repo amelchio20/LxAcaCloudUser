@@ -1,0 +1,1000 @@
+    3  git log -p -2
+    4  git status
+    5  git branch -a
+    6  git log --stat
+    7  git log --pretty=oneline
+    8  git log --stat
+    9  git log --pretty=format:"%h: %an, %ae, %cn, %cd, - %s"
+   10  git log --pretty=format:"%h: %an, %ae, %cn, %cd, - %s" --graph
+   11  cd
+   12  ls -lart
+   13  su -
+   14  sudo bash
+   15  exit
+   16  wegt https://releases.hashicorp.com/terraform/0.12.29/terraform_0.12.29_linux_amd64.zip
+   17  wget https://releases.hashicorp.com/terraform/0.12.29/terraform_0.12.29_linux_amd64.zip
+   18  sudo yum -y install unzip
+   19  ps -ef | grep -i ans
+   20  top
+   21  exit
+   22  top
+   23  exit
+   24  ps -ef | grep -i yum
+   25  unzip --v
+   26  ll
+   27  unzip terraform_0.12.29_linux_amd64.zip
+   28  ll
+   29  echo $PATH
+   30  su -
+   31  sudo bash
+   32  terraform version
+   33  aws s3 ls
+   34  sudo bash
+   35  pip3 install awscli --user
+   36  python --version
+   37  pip3 install ansible --user
+   38  ls -lart
+   39  mkdir deploy_iac_tf_ansible
+   40  cd deploy_iac_tf_ansible/
+   41  ls -lart
+   42  wget https://github.com/linuxacademy/content-deploying-to-aws-ansible-terraform/blob/master/aws_la_cloudplayground_version/ansible.cfg
+   43  cat ansible.cfg 
+   44  ls -lart
+   45  aws --version
+   46  ansible --version
+   47  cd ..
+   48  ansible --version
+   49  aws ec2 describe.instances
+   50  aws ec2 describe-instances
+   51  aws configure
+   52  aws ec2 describe-instances
+   53  exit
+   54  pwd
+   55  history
+   56  aws ec2 describe-instances
+   57  aws configure
+   58  aws ec2 describe-instances
+   59  git --version
+   60  pwd
+   61  ls -alrt
+   62  cd gitignore
+   63  ls -alrt
+   64  git status
+   65  git branch
+   66  git checkout development
+   67  git status
+   68  echo "another file" > ./add_one_file.log
+   69  git status
+   70  git status -e
+   71  git status -s
+   72  git status
+   73  git status -s
+   74  git status -v
+   75  git diff
+   76  git status -s
+   77  git commit -a -m "add and commit done together"
+   78  git status -s
+   79  git add add_one_file.log
+   80  git status -s
+   81  git diff
+   82  echo "another line added" >> ./add_one_file.log
+   83  git status -s
+   84  git commit -a -m "add and commit done together"
+   85  git status -s
+   86  git diff
+   87  git rm --cached add_one_file.log
+   88  git status -s
+   89  git rm  add_one_file.log
+   90  git add add_one_file.log
+   91  git status -s
+   92  git rm  add_one_file.log
+   93  ls -lart
+   94  git check ignore
+   95  cat .gitignore
+   96  git check-ignore *.mf
+   97  git check-ignore .git
+   98  git check-ignore .gitignore
+   99  vi TEXT.txt
+  100  ll
+  101  echo "*~" >> .gitignore
+  102  cat .gitignore
+  103  git check-ignore *~
+  104  git status
+  105  git status -s
+  106  git status -v
+  107  git diff
+  108  git commit -a -m "add and commit done together"
+  109  git status -s
+  110  git status -v
+  111  git commit -a -m "add and commit done together"
+  112  pwd
+  113  git status -s
+  114  cd ..
+  115  mkdir web-api
+  116  cd web-api/
+  117  git init
+  118  ls -alrt
+  119  echo "Web-API v1" >> README.md
+  120  git status
+  121  git add README.md 
+  122  git commit -m "Added README.md to the project"
+  123  git status
+  124  git tag -a v0.1 -m "first tag for the project"
+  125  git tag
+  126  git show v0.1
+  127  git tag
+  128  git tag v.02
+  129  git tag
+  130  git show v.02
+  131  git show v0.1
+  132  git tag
+  133  git tag -d v.02
+  134  git tag -d v0.1
+  135  git branch dev
+  136  git status
+  137  git log --oneline --decorate
+  138  git log --oneline --decorate full
+  139  git log --oneline --decorate=full
+  140  git checkout dev
+  141  git log --oneline --decorate=full
+  142  git status
+  143  ll
+  144  ls -lart
+  145  echo "new features" >> CHANGELOG.md
+  146  git commit -a -m "added new file CHANGELOG.md"
+  147  git add CHANGELOG.md
+  148  git commit -m "added new file CHANGELOG.md"
+  149  git status
+  150  git log --oneline --decorate=full
+  151  git log --oneline --decorate=full --graph
+  152  git checkout master
+  153  ll
+  154  vi master.txt
+  155  git status
+  156  git add master.txt 
+  157  git commit -m "added master.txt"
+  158  git status
+  159  git checkout dev
+  160  vi CHANGELOG.md 
+  161  git status
+  162  git add CHANGELOG.md
+  163  git commit -m "changed CHANGELOG.md"
+  164  git status
+  165  git checkout master
+  166  ll
+  167  git checkout dev
+  168  ll
+  169  cat .git/HEAD
+  170  cat .git/refs/heads/dev
+  171  git log --oneline
+  172  git checkout master
+  173  cat .git/HEAD
+  174  git log --oneline
+  175  git merge dev
+  176  git branch trial1
+  177  git branch trial2
+  178  git checkout trail1
+  179  git checkout trial1
+  180  ll
+  181  echo "stuff" >> info.txt
+  182  git status
+  183  git add info.txt 
+  184  git commit -m "info.txt in trial1"
+  185  git checkout trial2
+  186  echo "things" >> info.txt
+  187  git add info.txt
+  188  git commit -m "info.txt in trial2"
+  189  git checkout trial1
+  190  ll
+  191  git merge trial2
+  192  git status
+  193  vi info.txt 
+  194  git add info.txt 
+  195  git commit -m "merge conflict resolved by combi of info.txt"
+  196  git checkout master
+  197  git merge e
+  198  git merge trial1
+  199  cat info.txt
+  200  git status
+  201  git branch -d trial2
+  202  git branch -d trial1
+  203  git branch
+  204  git checkout dev
+  205  vim README.md 
+  206  git status
+  207  git commit -m "dev redme chnged"
+  208  git add README.md 
+  209  git commit -m "dev redme chnged"
+  210  git checkout master
+  211  git rebase dev
+  212  git branch
+  213  git rebase --abort
+  214  git status
+  215  git branch
+  216  ls -lart
+  217  git rm info.txt 
+  218  git status
+  219  git commit -m "del info.txt"
+  220  git status
+  221  ll
+  222  git rebase dev
+  223  git rebase --continue
+  224  ll
+  225  git checkout dev
+  226  git rebase --abort
+  227  git checkout dev
+  228  ls -l
+  229  exit
+  230  pwd
+  231  ls -lart
+  232  cd web-api/
+  233  ll
+  234  git branch
+  235  git checkout master
+  236  git rebase dev
+  237  git branch -d trial2
+  238  git branch -d trial1
+  239  git branch trial2
+  240  git checkout trial2
+  241  git rebase --abort
+  242  git branch trial2
+  243  git checkout trial2
+  244  ls -alrt
+  245  git rm info.txt 
+  246  git status 
+  247  git commit -m "del"
+  248  git status 
+  249  exit
+  250  cd web-api/
+  251  ls -l
+  252  git branch
+  253  git checkout master 
+  254  git branch
+  255  git branch -d trial2 
+  256  git branch -D trial2
+  257  git branch
+  258  git rebase dev
+  259  git rebase --abort
+  260  git branch trial2
+  261  git checkout  trial2
+  262  ll
+  263  git status
+  264  git checkout master
+  265  git merge trial2
+  266  vi .gitignore
+  267  ll
+  268  git branch
+  269  git branch -d trial2 
+  270  git branch
+  271  git rebase dev
+  272  git status
+  273  git rm info.txt
+  274  git status
+  275  vi .gitignore
+  276  git status
+  277  git commit -m "clear all"
+  278  git status
+  279  git rebase --abort
+  280  git status
+  281  git rebase dev
+  282  find . -name "*info*"
+  283  rm ./info.txt
+  284  ls -lart
+  285  git status
+  286  git rebase --abort
+  287  git status
+  288  git rebase dev
+  289  git status
+  290  git rebase --edit-todo
+  291  git rebase dev
+  292  git rebase --abort
+  293  git rebase dev
+  294  git rebase --edit-todo
+  295  git rebase --continue
+  296  vi info.txt
+  297  git status
+  298  git add info.txt 
+  299  git commit -m "ff"
+  300  git status
+  301  git rebase --continue
+  302  vi info.txt
+  303  git merge info.txt
+  304  git add info.txt
+  305  git commit -m "ff"
+  306  git rebase --continue
+  307  git branch
+  308  git rebase dev
+  309  git checkout dev
+  310  ll
+  311  vi README.md 
+  312  git status 
+  313  git add README.md 
+  314  git commit -m "readme chenged"
+  315  git checkout master 
+  316  git rebase dev
+  317  ll
+  318  cat README.md 
+  319  git branch
+  320  echo "bbgdbgdbdfgbfgdbfgd" >> README.md 
+  321  git status
+  322  git add README.md 
+  323  git commit -m "added bullshit to README"
+  324  git revert HEAD
+  325  cat README.md 
+  326  git log
+  327  git log --oneline
+  328  git revert HEAD~2
+  329  ll
+  330  git log --oneline
+  331  git diff
+  332  echo "show me git diff" >> CHANGELOG.md 
+  333  git diff
+  334  git diff HEAD^ HEAD
+  335  get log --oneline
+  336  git log --oneline
+  337  git diff eca6d19 8587e42
+  338  git diff --summary eca6d19 8587e42
+  339  git gc --auto
+  340  git gc --prune
+  341  git config gc.pruneexpire "30 days"
+  342  exit
+  343  history | grep -i aws
+  344  aws ec2 describe.instances
+  345  history | grep -i aws
+  346  aws ec2 describe-instances
+  347  aws configure
+  348  aws ec2 describe-instances
+  349  cd web-api/
+  350  git log --since="2 hours ago"
+  351  git log --since="3 hours ago"
+  352  git log --since="4 hours ago"
+  353  git log --since="280 minutes ago"
+  354  git log --since="150 minutes ago"
+  355  git log --since="180 minutes ago"
+  356  git log --since="190 minutes ago"
+  357  git log --graph
+  358  git log --stats
+  359  git log --stat
+  360  clear
+  361  git log --stat
+  362  clear
+  363  git log --stat 
+  364  git log --since="210 minutes ago" 
+  365  git log --since="200 minutes ago" 
+  366  git log --since="200 minutes ago" --stat
+  367  clear
+  368  git log --since="200 minutes ago" --stat
+  369  git log --since="200 minutes ago"
+  370  git log -S build
+  371  git log -S bull
+  372  git log -S 
+  373  git log -S commit
+  374  git log -S com
+  375  git log 
+  376  git log -S md
+  377  git log -S "md"
+  378  git log -S"facebook"
+  379  git log -S"bull"
+  380  git log --grep="bull"
+  381  git log -S"bull"
+  382  git log -S "bull"
+  383  git log --S "bull"
+  384  man git-log
+  385  history |  grep -i pretty
+  386  git log --pretty=format:"%h - %an - %ar - %s"
+  387  pwd
+  388  cd ..
+  389  clear
+  390  ll web-api/
+  391  git clone web-api web-api-test
+  392  ll
+  393  cd web-api-test
+  394  git status
+  395  git branch
+  396  cd ..
+  397  git clone https://github.com/CloudAssessments/fs-photos.git
+  398  ll fs*
+  399  cd fs-photos
+  400  git log --graph
+  401  git status
+  402  pwd
+  403  git remote -v
+  404  cd ..
+  405  cd .ssh
+  406  ls -alrt
+  407  cat id_rsa.pub 
+  408  cd ..
+  409  ls -lart
+  410  git clone git@github.com:linuxacademy/content-source-control-git.git
+  411  cd ..
+  412  cd
+  413  cd .ssh
+  414  ls -lart
+  415  cd ..
+  416  ssh-keygen
+  417  cd .ssh
+  418  cat id_ras.pub
+  419  ls -lart
+  420  cat id_rsa.pub 
+  421  cd ..
+  422  git clone git@github.com:linuxacademy/content-source-control-git.git
+  423  ll
+  424  cd content-source-control-git
+  425  ll
+  426  git remote -v
+  427  git remote
+  428  clear
+  429  git remote show origin
+  430  git fetch origin
+  431  git pull
+  432  git status
+  433  git checkout -b readme
+  434  git branch
+  435  ll
+  436  echo "added new lines to readme file in brnach readme" >> README.md 
+  437  git status
+  438  git add README.md 
+  439  git commit -m "updated readme on readme branch"
+  440  git push -u origin readme
+  441  cd ..
+  442  git clone git@github.com:amelchio20/myrepo.git
+  443  ll
+  444  cd myrepo/
+  445  ls -lart
+  446  echo "added new lines to readme file in brnach readme" >> README.md 
+  447  git add README.md 
+  448  git commit -m "updated readme on readme branch"
+  449  ll
+  450  cd ..
+  451  rm -rf myrepo
+  452  git clone git@github.com:amelchio20/myrepo.git
+  453  cd myrepo/
+  454  git branch
+  455  git checkout -b readme
+  456  git branch
+  457  echo "added new lines to readme file in brnach readme" >> README.md 
+  458  git status
+  459  git add README.md 
+  460  git commit -m "updated readme on readme branch"
+  461  git push -u origin readme
+  462  git remote -v
+  463  ll
+  464  echo "added second line to readme file in brnach readme" >> README.md 
+  465  git add README.md 
+  466  git commit -m "update readme with second line on readme branch"
+  467  git push -u origin readme
+  468  exit
+  469  aws configure
+  470  aws s3 ls
+  471  pwd
+  472  aws s3 ls
+  473  aws rds -help
+  474  aws help | grep -i rds
+  475  aws rds help
+  476  ls -lart
+  477  history
+  478  aws configure
+  479  aws s3 ls
+  480  aws rds help
+  481  aws rds describe-db-snapshots     --snapshot-type manual     --query "length(*[].{DBSnapshots:SnapshotType})"
+  482  aws rds describe-db-snapshots  --snapshot-type manual --query "length(*[].{DBSnapshots:SnapshotType})"
+  483  aws rds describe-db-snapshots
+  484  aws rds describe-db-snapshots | grep -i manu
+  485  aws rds describe-db-snapshots | grep -i auto
+  486  python3 --version
+  487  aws rds describe-db-snapshots help
+  488  aws rds describe-db-snapshots --output json
+  489  aws rds describe-db-snapshots --output text
+  490  aws rds describe-db-snapshots --output table
+  491  aws rds describe-db-snapshots --output json
+  492  aws ec2 describe-instance help
+  493  aws ec2 describe-instances
+  494  aws configure
+  495  aws ec2 describe-instances
+  496  date
+  497  aws ec2 describe-instances
+  498  exit
+  499  pwd
+  500  ls -lart
+  501  aws s3 ls
+  502  pwd
+  503  sudo yum update
+  504  sudo -s
+  505  sudo yum install -y python3-pip python3 python3-setuptools
+  506  python --version
+  507  pip3 install boto3 --user
+  508  aws configure
+  509  aws s3 ls
+  510  aws ec2 decribe-instances
+  511  aws ec2 describe-instances
+  512  python3
+  513  aws configure
+  514  ls -lart
+  515  cat .python_history
+  516  sudo yum install python3.8
+  517  pip3 install boto3 --user
+  518  python -V
+  519  python --version
+  520   python3.8 -V
+  521  python
+  522  python3.8
+  523  python --version
+  524  first, check if you have python3.8 installed use
+  525  ls /usr/bin/python*
+  526  update-alternatives --list python
+  527  update-alternatives --list | grep -i python
+  528  ls -l /usr/bin/python
+  529  cat /etc/alternatives/python
+  530  ls /usr/bin/python*
+  531  ls -lart /usr/bin/python
+  532  ls -lart /usr/bin/python*
+  533  cat /etc/*releae*
+  534  cat /etc/*release*
+  535  sudo update-alternatives --config python
+  536  python --version
+  537  python3.8 --version
+  538  ls -lart /usr/bin/python*
+  539  sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8.6
+  540  sudo update-alternatives  --set python /usr/bin/python3.8
+  541  sudo update-alternatives  --set python /usr/bin/python3.8.6
+  542  sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8
+  543  sudo -s
+  544  ls -lart /usr/bin/python*
+  545  ls -lart  /usr/local/bin/python3 
+  546  ls -lart  /usr/bin/python3 
+  547  ls -lart /usr/bin/python*
+  548  aws sts help
+  549  aws sts get
+  550  aws sts get-caller-identity
+  551  aws s3 ls
+  552  python3.8
+  553  pip3 install boto3 --user
+  554  pip3.8 install boto3 --user
+  555  python3.8
+  556  aws configure
+  557  aws ec2 describe-instances
+  558  exit
+  559  pwd
+  560  ls -alrt
+  561  mkdir lambda
+  562  cd lambda/
+  563  ls -alrt
+  564  mkdir zap1
+  565  cd zap1/
+  566  ls -lat
+  567  ls -lart
+  568  pip3 install --target ./package requests
+  569  pip3 install --target ./package pyzabbix
+  570  pip3 install --target ./package requests --upgrade
+  571  pip3 install --target ./package pyzabbix --upgrade
+  572  ls -lart
+  573  vi lambda_function.py
+  574  cd package/
+  575  zip -r ../my-deployment-package.zip 
+  576  zip -r ../my-deployment-package.zip .
+  577  cd ..
+  578  ls -l
+  579  zip -g my-deployment-package.zip lambda_function.py
+  580  ls -l
+  581  vi lambda_poliy.txt
+  582  ls -l
+  583  mv lambda_poliy.txt lambda_policy.json
+  584  aws iam create-role --role-name lambda-ex --assume-role-policy-document file://lambda-policy.json
+  585  pwd
+  586  aws iam create-role --role-name lambda-ex --assume-role-policy-document file:///home/cloud_user/lambda/zap1/lambda-policy.json
+  587  aws iam create-role --role-name lambda-ex --assume-role-policy-document file://home/cloud_user/lambda/zap1/lambda-policy.json
+  588  ls -alrt /home/cloud_user/lambda/zap1/lambda-policy.json
+  589  ls -l
+  590  pwd
+  591  ls -lart /home/cloud_user/lambda/zap1
+  592  ls -lart /home/cloud_user/lambda/zap1/lambda_policy.json
+  593  aws iam create-role --role-name lambda-ex --assume-role-policy-document file:///home/cloud_user/lambda/zap1/lambda_policy.json
+  594  aws iam create-role --role-name lambda-ex --assume-role-policy-document file://home/cloud_user/lambda/zap1/lambda_policy.json
+  595  aws iam create-role --role-name lambda-ex --assume-role-policy-document file:///home/cloud_user/lambda/zap1/lambda_policy.json
+  596  aws s3 ls
+  597  aws configure
+  598  aws iam create-role --role-name lambda-ex --assume-role-policy-document file:///home/cloud_user/lambda/zap1/lambda_policy.json
+  599  vi  /home/cloud_user/lambda/zap1/lambda_policy.json
+  600  aws iam create-role --role-name lambda-ex --assume-role-policy-document file:///home/cloud_user/lambda/zap1/lambda_policy.json
+  601  vi  /home/cloud_user/lambda/zap1/lambda_policy.json
+  602  aws iam create-role --role-name lambda-ex --assume-role-policy-document file:///home/cloud_user/lambda/zap1/lambda_policy.json
+  603  vi  /home/cloud_user/lambda/zap1/lambda_policy.json
+  604  ## aws lambda create-function --function-name lbtest --zip-file fileb://my-deployment-package.zip --handler lambda_function.lambda_handler --runtime python3.7 --role arn:aws:iam::621046659448:role/service-role/lbtest-role-qiqf2bqt --vpc-config SubnetIds=subnet-00b48792fc4747851,subnet-069d83e46d1b6926d,SecurityGroupIds=sg-0e41019941cddeb20 --timeout 180
+  605   --memory-size 1024
+  606  aws lambda create-function --function-name lbtest -zip-file fileb://my-deployment-package.zip --handler lambda_function.lambda_handler --runtime python3.7 --role arn:aws:iam::242307434447:role/service-role/zabp1-role-2zcf134r -timeout 180 --memory-size 1024
+  607  ll
+  608  aws lambda create-function --function-name lbtest --zip-file fileb://my-deployment-package.zip --handler lambda_function.lambda_handler --runtime python3.7 --role arn:aws:iam::242307434447:role/service-role/zabp1-role-2zcf134r -timeout 180 --memory-size 1024
+  609  aws lambda create-function --function-name lbtest --zip-file fileb://my-deployment-package.zip --handler lambda_function.lambda_handler --runtime python3.7 --role arn:aws:iam::242307434447:role/service-role/zabp1-role-2zcf134r --timeout 180 --memory-size 1024
+  610  exit
+  611  aws configure
+  612  aws s3 ls
+  613  aes ec2 describe-instances
+  614  aws ec2 describe-instances
+  615  aws sts get
+  616  aws sts get-caller-identity
+  617  pwd
+  618  ls -alrt
+  619  cd lambda
+  620  ls -lart
+  621  cd zap1
+  622  ls -lart
+  623  cd ..
+  624  mkdir deep
+  625  cd deep
+  626  mkdir alias
+  627  cd alias/
+  628  vi lambda_function.py
+  629  zip -g ebs-files.zip lambda_function.py
+  630  ll
+  631  aws lambda create-function \ 
+  632  aws lambda create-function\ 
+  633  aws lambda create-function --region us-east-1 --function-name EBS-snapshot-from-zip --description "create alias version functions from cli" --zip-file fileb://ebs-files.zip --role arn:aws:iam::506189848464:role/service-role/backupEBS-role-qfqwpfpd --handler lambda_function.lambda_handler --runtime python3.7 --publish
+  634  which aws_completer
+  635  echo $SHELL
+  636  ls -lart ~/.local/bin/aws_completer
+  637  export PATH=/home/cloud_user/.local/bin/aws_completer:$PATH
+  638   source ~/.bash_profile
+  639  complete -C '/home/cloud_user/.local/bin/aws_completer' aws
+  640  aws ec2 describe-instancees
+  641  aws ec2 describe-instances
+  642  which aws_completer
+  643  echo $SHELL
+  644  export PATH=/home/cloud_user/.local/bin/aws_completer:$PATH
+  645   source ~/.bash_profile
+  646  complete -C '/home/cloud_user/.local/bin/aws_completer' aws
+  647  aws lambda create-alias --function-name EBS-snapshot-from-zip --description "sample alias" --function-version "\$LATEST" --name "DEV" 
+  648  aws lambda create-alias --function-name EBS-snapshot-from-zip --description "sample alias" --function-version 1 --name "PROD" 
+  649  vi lambda_function.py
+  650  ls -alrt *zip
+  651  rm *zip
+  652  zip -g ebs-files.zip lambda_function.py
+  653  aws lambda update-function-code --function-name EBS-snapshot-from-zip   --zip-file fileb://ebs-files.zip 
+  654  aws lambda publish-version  --function-name EBS-snapshot-from-zip
+  655  aws lambda update-alias --function-name EBS-snapshot-from-zip --function-version 2 --name DEV
+  656  aws lambda list-aliases --function-name EBS-snapshot-from-zip
+  657  history
+  658  aws lambda list-functions 
+  659  aws lambda list-versions-by-function --function-name EBS-snapshot-from-zip
+  660  history
+  661  aws lambda list-versions-by-function --function-name 
+  662  aws lambda list-functions 
+  663  aws lambda list-versions-by-function --function-name backupEBS
+  664  exit
+  665  cd lambda
+  666  ls -lar
+  667  cd deep
+  668  ls -lart
+  669  mkdir cloudformation
+  670  cd cloudformation/
+  671  aws iam create-role 
+  672  exit
+  673  pwd
+  674  aws configure
+  675  was s3 ls
+  676  aws s3 ls
+  677  ls -lart
+  678  cd lambda
+  679  ls -alrt
+  680  cd deep
+  681  ls -alrt
+  682  mdkir first_py
+  683  mkdir first_py
+  684  cd first_py/
+  685  ls -alrt
+  686  vi lambda_execution_policy.json
+  687  vi lambda_assume_role_policy.json
+  688  aws iam create-role --role-name LambdaIAMRole --description "Lambda Role" --assume-role-policy-document file://lambda_assume_role_policy.json
+  689  aws iam create-policy --policy-name LambdaRolePolicy --policy-document file://lambda_execution_policy.json
+  690  aws iam attach-role-policy --role-name "LambdaIAMRole" --policy-arn arn:aws:iam::384245390539:policy/LambdaRolePolicy
+  691  aws sns create-topic --name LambdaTopic --region us-east-1
+  692  aws sns subscribe --protocol "email" --topic-arn arn:aws:sns:us-east-1:384245390539:LambdaTopic  --notification-endpoint "Armin.Melchior@t-systems.com"  --region us-east-1
+  693  vi lambda_function.py
+  694  zip lambda_function.zip lambda_function.py
+  695  ls -lart
+  696  aws lambda create-function --memory-size 128 --function-name my-lambda --runtime python3.7 --handler lambda_function.lambda_handler --zip-file fileb://lambda_function.zip --role arn:aws:iam::384245390539:role/LambdaIAMRole
+  697  cat lambda_execution_policy.json
+  698  cat lambda_assume_role_policy.json 
+  699  cat lambda_function.py 
+  700  aws s3 mb s3://myfirstbucket-am-190721-1700
+  701  vi testfile.txt
+  702  aws s3 cp ./testfile.txt s3://myfirstbucket-am-190721-1700/text/testfile.txt
+  703  aws s3 ls
+  704  aws s3api get-bucket-acl --bucket
+  705  aws s3api get-bucket-acl help
+  706  aws s3api get-bucket-acl --bucket myfirstbucket-am-190721-1700
+  707  aws s3api get help
+  708  aws lambda add-permission --action lambda:InvokeFunction --principal s3.amazonaws.com --statement-id LabS3Trigger --function-name my-lambda --source-arn arn:aws:s3:::myfirstbucket-am-190721-1700
+  709  vim bucket-trigger-notification.json
+  710  aws lambda list-functions
+  711  vim bucket-trigger-notification.json
+  712  cat bucket-trigger-notification.json
+  713  aws s3api put-bucket-notification-configuration --bucket <S3_BUCKET_NAME> --notification-configuration file://bucket-trigger-notification.json
+  714  aws s3api put-bucket-notification-configuration --bucket arn:aws:s3:::myfirstbucket-am-190721-1700 --notification-configuration file://bucket-trigger-notification.json
+  715  aws s3api put-bucket-notification-configuration --bucket myfirstbucket-am-190721-1700 --notification-configuration file://bucket-trigger-notification.json
+  716  aws s3 cp ./testfile.txt s3://myfirstbucket-am-190721-1700/text/myfile.txt
+  717  ll
+  718  vi lambda_execution_policy.json
+  719  history | grep -i policy
+  720  aws iam put-role-policy --role-name "LambdaIAMRole" --policy-name LambdaRolePolicy --policy-document file://lambda_execution_policy.json
+  721  cat lambda_execution_policy.json 
+  722  aws s3 cp ./testfile.txt s3://myfirstbucket-am-190721-1700/text/myfile2.txt
+  723  fc -l -100
+  724  fc -l -100 | grep -i api
+  725  cat bucket-trigger-notification.json
+  726  aws s3api put-bucket-notification-configuration --bucket myfirstbucket-am-190721-1700  --notification-configuration file://bucket-trigger-notification.json
+  727  aws s3 cp ./testfile.txt s3://myfirstbucket-am-190721-1700/text/myfiler3.txt
+  728  aws s3 cp ./testfile.txt s3://myfirstbucket-am-190721-1700/myfiler3.txt
+  729  exit
+  730  aws configure
+  731  aws ec2 describe-instances
+  732  which aws_completer
+  733   echo $SHELL
+  734   export PATH=/home/cloud_user/.local/bin/aws_completer:$PATH
+  735  source ~/.bash_profile
+  736  complete -C '/home/cloud_user/.local/bin/aws_completer' aws
+  737  pwd
+  738  ls -alrt
+  739  cd lambda
+  740  ci autoc.sh
+  741  vi autoc.sh
+  742  chmod 755 autoc.sh 
+  743  ./autoc.sh 
+  744  c
+  745  cat ./autoc.sh 
+  746  cd ..
+  747  aws lambda list-function
+  748  aws lambda list-functions
+  749  aws iam list-roles
+  750  clear
+  751  aws iam list-roles
+  752  history | grep -i lambda | grep aws
+  753  history | grep -i lambda | grep version
+  754  history | grep -i lambda | grep alias
+  755  history | grep -i lambda | grep create
+  756  history | grep -i lambda | grep del
+  757  pwd
+  758  ll
+  759  cd lambda/
+  760  ls -alrt
+  761  cd deep
+  762  ls -lart
+  763  mkdir lambda_from_s3
+  764  cd lambda_from_s3/
+  765  vi lambda_function.py
+  766  zip lambda_function.zip lambda_function.py
+  767  cat lambda_function.py
+  768  ls -lart
+  769  aws s3 mb s3://myfirstbucket-am-200721-1700
+  770  aws s3 cp lambda_function.zip s3://myfirstbucket-am-200721-1700/lambdacode/lambda_function.zip
+  771  ## aws lambda create-function -- profile pro --region eu-central-1 --memory-size 128 --function-name my-lambda --runtime python3.7 --handler lambda_function.lambda_handler --code S3Bucket=<S3-BUCKET-Name>,S3Key=lambda_function.zip --timeout <X-SECONDS> --role <ROLE_ARN> --description "create a lambda function from S3 zip-file"
+  772  aws lambda create-function --memory-size 128 --function-name lambda-from-s3 --runtime python3.8  --handler lambda_function.lambda_handler --code S3Bucket=myfirstbucket-am-200721-1700,S3Key=lambdacode/lambda_function.zip --timeout 120 --role arn:aws:iam::158416907023:role/service-role/ShowName-role-1npv85gr --description "my first lambda function created from a S3 zip-file"
+  773  exit
+  774  cd lambda/
+  775  cd deep/
+  776  ls -l
+  777  cd lambda_from_s3/
+  778  ls -lart
+  779  fc -l -20
+  780  aws configure
+  781  aws s3 mb s3://myfirstbucket-am-200721-1700
+  782  aws s3 mb s3://myfirstbucket-am-200721-1730
+  783  aws s3 cp lambda_function.zip s3://myfirstbucket-am-200721-1700/lambdacode/lambda_function.zip
+  784  aws lambda create-function --memory-size 128 --function-name lambda-from-s3 --runtime python3.8  --handler lambda_function.lambda_handler --code S3Bucket=myfirstbucket-am-200721-1700,S3Key=lambdacode/lambda_function.zip --timeout 120 --role arn:aws:iam::129432529795:role/lambda_exec --description "my first lambda function created from a S3 zip-file"
+  785  aws lambda create-function --memory-size 128 --function-name lambda-from-s3 --runtime python3.8  --handler lambda_function.lambda_handler --code S3Bucket=myfirstbucket-am-200721-1730,S3Key=lambdacode/lambda_function.zip --timeout 120 --role arn:aws:iam::129432529795:role/lambda_exec --description "my first lambda function created from a S3 zip-file"
+  786  aws s3 cp lambda_function.zip s3://myfirstbucket-am-200721-1730/lambdacode/lambda_function.zip
+  787  aws lambda create-function --memory-size 128 --function-name lambda-from-s3 --runtime python3.8  --handler lambda_function.lambda_handler --code S3Bucket=myfirstbucket-am-200721-1730,S3Key=lambdacode/lambda_function.zip --timeout 120 --role arn:aws:iam::129432529795:role/lambda_exec --description "my first lambda function created from a S3 zip-file"
+  788  cd ..
+  789  mkdir invoke_lambds
+  790  mv invoke_lambds invoke_lambda
+  791  cd invoke_lambda/
+  792  vi test.json
+  793  cat test.json 
+  794  cd ..
+  795  ll
+  796  ls -lart
+  797  cd ..
+  798  ls -lart
+  799  ./autoc.sh 
+  800  cd deep
+  801  cd invoke_lambda/
+  802  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json --invokation-type DryRun output.json
+  803  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json --invokation-type DryRun 
+  804  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json --invocation-type DryRun output.json
+  805  ll
+  806  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json output.json
+  807  ll
+  808  cat output.json 
+  809  vi test.json
+  810  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json output.json
+  811  cat output.json 
+  812  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json 
+  813  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json output.json
+  814  cat output.json 
+  815  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json test.out --output jsdon
+  816  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json test.out --output json
+  817  aws lambda invoke --function-name lambda-from-s3 --payload file://test.json test.out --output table
+  818  ll
+  819  cat test.out 
+  820  exit
+  821  aws configure
+  822  aws s3 ls
+  823  cd lambda/
+  824  ll
+  825  cat autoc.sh 
+  826  export PATH=/home/cloud_user/.local/bin/aws_completer:$PATH
+  827  source ~/.bash_profile
+  828  complete -C '/home/cloud_user/.local/bin/aws_completer' aws
+  829  aws s3 ls 
+  830  aws ec2 describe-instances
+  831  ls -lart
+  832  cd deep
+  833  mkdir pull_events_cr_map
+  834  ll
+  835  cd pull_events_cr_map/
+  836  history > ./cmds_210721
+  837  ll
+  838  tail cmds_210721 
+  839  aws iam create-role help
+  840  # aws iam create-role --role-name Test-Role --assume-role-policy-document file://Test-Role-Trust-Policy.json
+  841  vi lambda_role.json
+  842  # aws iam create-role --role-name LambdaDynamoDBRole --assume-role-policy-document file://LambdaDynamoDBStreamRole.json
+  843  mv lambda_role.json LambdaDynamoDBStreamRole.json
+  844  aws iam create-role --role-name LambdaDynamoDBRole --assume-role-policy-document file://LambdaDynamoDBStreamRole.json
+  845  vi LambdaDynamoDBStreamRole.json
+  846  aws iam create-role --role-name LambdaDynamoDBRole --assume-role-policy-document file://LambdaDynamoDBStreamRole.json
+  847  vi LambdaDynamoDBStreamRole.json
+  848  aws iam create-role --role-name LambdaDynamoDBRole --assume-role-policy-document file://LambdaDynamoDBStreamRole.json
+  849  vi LambdaDynamoDBStreamRole.json
+  850  aws iam create-role --role-name LambdaDynamoDBRole --assume-role-policy-document file://LambdaDynamoDBStreamRole.json
+  851  cat LambdaDynamoDBStreamRole.json
+  852  aws iam put-role-policy help
+  853  # aws iam put-role-policy --role-name Test-Role --policy-name ExamplePolicy --policy-document file://AdminPolicy.json
+  854  vi LambdaDynamoDBStreamPolicy.json
+  855  cat LambdaDynamoDBStreamPolicy.json
+  856  aws iam put-role-policy --role-name LambdaDynamoDBRole -policy-name LambdaDynamoDB --policy-document file://LambdaDynamoDBStreamPolicy.json
+  857  clear
+  858  aws iam put-role-policy --role-name LambdaDynamoDBRole -policy-name LambdaDynamoDB --policy-document file:///LambdaDynamoDBStreamPolicy.json
+  859  aws --version
+  860  cd ..
+  861  mkdir aws_cli2_update
+  862  cd aws_cli2_update/
+  863  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+  864  ll
+  865  unzip awscliv2.zip
+  866  which aws
+  867  ls -lart ~/.local/bin/aws
+  868  ls -lart /usr/local/bin/aws
+  869  ls -lart /usr/local/bin
+  870  ls -lart ~/.local/bin/aws
+  871  sudo ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update
+  872  aws --version
+  873  echo $PATH
+  874  sudo ./aws/install --bin-dir /home/cloud_user/.local/bin --install-dir /home/cloud_user/.local/bin/aws --update
+  875  /usr/local/bin/aws --version
+  876  cd /home/cloud_user/.local/bin
+  877  ls -lart
+  878  cd aws
+  879  my aws aws.org
+  880  mv aws aws.org
+  881  aws --version
+  882  cd /usr/local/bin
+  883  ls -lart aws*
+  884  ls -lart usr/local/aws-cli/v2/current/bin/aws
+  885  ls -lart /usr/local/aws-cli/v2/current/bin/aws
+  886  ls -lart /usr/local/aws-cli/v2/current/dist/aws
+  887  cp /usr/local/aws-cli/v2/current/dist/aws /home/cloud_user/.local/bin/aws
+  888  aws --version
+  889  sudo ./aws/install --bin-dir /home/cloud_user/.local/bin --install-dir /home/cloud_user/.local/bin/aws --update
+  890  cd
+  891  cd lambda/
+  892  cd ls
+  893  ll
+  894  cd aws_cli2_update/
+  895  sudo ./aws/install --bin-dir /home/cloud_user/.local/bin --install-dir /home/cloud_user/.local/bin/aws --update
+  896  sudo ./aws/install --bin-dir /home/cloud_user/.local/bin --install-dir /home/cloud_user/.local/bin --update
+  897  aws --version
+  898  ls -lart
+  899  cd ..
+  900  cd deep/
+  901  cd pull_events_cr_map/
+  902  ll
+  903  aws iam put-role-policy --role-name LambdaDynamoDBRole -policy-name LambdaDynamoDB --policy-document file:///LambdaDynamoDBStreamPolicy.json
+  904  aws iam put-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDynamoDB --policy-document file:///LambdaDynamoDBStreamPolicy.json
+  905  aws iam put-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDynamoDB --policy-document file://LambdaDynamoDBStreamPolicy.json
+  906  aws iam get-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDyLambdaDynamoDB
+  907  aws iam get-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDynamoDB
+  908  clear
+  909  aws iam get-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDynamoDB
+  910  aws iam list-role help
+  911  aws iam list-roles help
+  912  aws iam list-roles
+  913  aws iam list-roles help 
+  914  aws iam list-roles ----path-prefix /La/
+  915  aws iam list-roles ----path-prefix=/La/
+  916  aws iam list-roles ----path-prefix="La"
+  917  aws iam list-roles ----path-prefix="/"
+  918  aws iam list-roles help 
+  919  aws iam list-roles ----path-prefix /
+  920  aws iam list-roles < grep -i Lamb
+  921  aws iam list-roles | grep -i Lamb
+  922  aws iam list-roles ----path-prefix /LambdaDynamoDBRole/
+  923  aws iam list-roles ----path-prefix /
+  924  aws iam list-roles ----path-prefix //
+  925  aws iam list-roles --path-prefix /aws-service-role/
+  926  aws iam list-roles help 
+  927  aws iam get-role --role-name LambdaDynamoDBRole --query 'Role.[RoleName, Arn]' --output text
+  928  vi lambda_function.py
+  929  zip lambda_function.zip lambda_function.py
+  930  cat history | grep create-funct
+  931  history | grep create-funct
+  932  aws lambda create-function --function-name SynamoDBStreamLog --runtime python3.8 -role arn:aws:iam::382835454016:role/LambdaDynamoDBRole --handler lambda_function.lambda_handler --zip-file fileb://lambda_function.zip --timeout 120 --memory-size 512 --description "lambda function to pull event from dynamodb"
+  933  aws lambda create-function --function-name DynamoDBStreamLog --runtime python3.7 --role arn:aws:iam::382835454016:role/LambdaDynamoDBRole --handler lambda_function.lambda_handler --zip-file fileb://lambda_function.zip --timeout 120 --memory-size 512 --description "lambda function to pull event from dynamodb"
+  934  history | grep invoke
+  935  vi dynamo_stream_update.json
+  936  aws lambda invoke --function-name DynamoDBStreamLog --payload file://dynamo_stream_update.json output_dynamo.json
+  937  vi dynamo_stream_update.json
+  938  aws lambda invoke --function-name DynamoDBStreamLog --payload file://dynamo_stream_update.json output_dynamo.json
+  939  aws lambda invoke --function-name DynamoDBStreamLog --payload file://dynamo_stream_update.json
+  940  aws lambda invoke --function-name DynamoDBStreamLog --payload file://dynamo_stream_update.json out.json
+  941  ll
+  942  aws lambda list-event-source-mappings 
+  943  aws lambda create-event-source-mappings help
+  944  aws lambda create-event-source-mapping help
+  945  aws lambda create-event-source-mapping --event-source-arn arn:aws:dynamodb:us-east-1:382835454016:table/la-lambda-table/stream/2021-07-21T12:50:57.062 --function-name DynamoDBStreamLog --enable --starting-position LATEST
+  946  aws lambda create-event-source-mapping help
+  947  aws lambda list-event-source-mappings 
+  948  !
+  949  aws lambda invoke --function-name DynamoDBStreamLog --payload file://dynamo_stream_update.json out.json
+  950  aws lambda invoke --cli-binary-format raw-in-base64-out --function-name DynamoDBStreamLog --payload file://dynamo_stream_update.json out.json
+  951  aws lambda list-event-source-mappings 
+  952  aws configure
+  953  aws lambda list-event-source-mappings 
+  954  fc -l -100
+  955  # aws iam put-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDynamoDB --policy-document file://LambdaDynamoDBStreamPolicy.json
+  956  aws iam put-role-policy --role-name LambdaDynamoDBRole -policy-name LambdaDynamoDB --policy-document file:///LambdaDynamoDBStreamPolicy.json
+  957  aws iam put-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDynamoDB --policy-document file:///LambdaDynamoDBStreamPolicy.json
+  958  aws iam put-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDynamoDB --policy-document file://LambdaDynamoDBStreamPolicy.json
+  959  fc -l -120
+  960  aws iam create-role --role-name LambdaDynamoDBRole --assume-role-policy-document file://LambdaDynamoDBStreamRole.json
+  961  aws iam put-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDynamoDB --policy-document file://LambdaDynamoDBStreamPolicy.json
+  962  aws iam get-role-policy --role-name LambdaDynamoDBRole --policy-name LambdaDynamoDB
+  963  aws iam get-role --role-name LambdaDynamoDBRole --query 'Role.[RoleName, Arn]' --output text
+  964  LambdaDynamoDBRole      arn:aws:iam::595438810944:role/LambdaDynamoDBRole
+  965  aws lambda create-function --function-name DynamoDBStreamLog --runtime python3.7 --role arn:aws:iam::595438810944:role/LambdaDynamoDBRole  --handler lambda_function.lambda_handler --zip-file fileb://lambda_function.zip --timeout 120 --memory-size 512 --description "lambda function to pull event from dynamodb"
+  966  ls -alrt
+  967  vi PullDynamoDBEventTest.json
+  968  cat PullDynamoDBEventTest.json
+  969  fc -l -100 |  grep -i invoke
+  970  aws lambda invoke --function-name DynamoDBStreamLog --payload file://PullDynamoDBEventTest.json test_output.json
+  971  aws lambda invoke --cli-binary-format raw-in-base64-out --function-name DynamoDBStreamLog --payload file://PullDynamoDBEventTest.json test_output.json
+  972  cat test_output.json
+  973  ll
+  974  cat lambda_function.py
+  975  vi lambda_function.py
+  976  zip lambda_function.zip lambda_function.py
+  977  aws lambda invoke --cli-binary-format raw-in-base64-out --function-name DynamoDBStreamLog --payload file://PullDynamoDBEventTest.json test_output.json
+  978  cat test_output.json
+  979  aws lambda create-event-source-mapping --event-source-arn arn:aws:dynamodb:us-east-1:595438810944:table/la-lambda-table/stream/2021-07-21T14:50:01.938 --function-name DynamoDBStreamLog --enable --starting-position LATEST
+  980  aws logs describe-log-groups 
+  981  aws logs describe-log-streams --log-group-name /aws/lambda/DynamoDBStreamLog
+  982  aws logs describe-log-streams --log-group-name /aws/lambda/DynamoDBStreamLog --log-stream-name-prefix 2021/07/21
+  983  aws logs get-log-events --log-group-name /aws/lambda/DynamoDBStreamLog --log-stream-name 2021/07/21/[$LATEST]55da41aa77684e0c99fd824cd18b0c66 --output text
+  984  aws logs get-log-events --log-group-name /aws/lambda/DynamoDBStreamLog --log-stream-name 2021/07/21/55da41aa77684e0c99fd824cd18b0c66 --output text
+  985  logstreams=$(aws logs describe-log-streams --log-group-name /aws/lambda/DynamoDBStreamLog --output text --query 'logstreamx[*].logStreamName')
+  986  echo $logstreams
+  987  logstreams=$(aws logs describe-log-streams --log-group-name /aws/lambda/DynamoDBStreamLog --output text --query 'logstreame[*].logStreamName')
+  988  echo $logstreams
+  989  logstreams=$(aws logs describe-log-streams --log-group-name /aws/lambda/DynamoDBStreamLog --output text --query 'logstreams[*].logStreamName')
+  990  echo $logstreams
+  991  logstreams=$(aws logs describe-log-streams --log-group-name /aws/lambda/DynamoDBStreamLog --output text --query 'logStreams[*].logStreamName')
+  992  echo $logstreams
+  993  for log_stream in $logstreams; do aws logs get_log_events --log-group-name /aws/lambda/DynamoDBStreamLog --log-stream-name $log_stream; done
+  994  for log_stream in $logstreams; do aws logs get-log-events --log-group-name /aws/lambda/DynamoDBStreamLog --log-stream-name $log_stream ; done
+  995  for log_stream in $logstreams; do aws logs get-log-events --log-group-name /aws/lambda/DynamoDBStreamLog --log-stream-name $log_stream --output text --query 'events[*].message; done
+  996  for log_stream in $logstreams; do aws logs get-log-events --log-group-name /aws/lambda/DynamoDBStreamLog --log-stream-name $log_stream --output text --query 'events[*].message'; done
+  997  logstreams=$(aws logs describe-log-streams --log-group-name /aws/lambda/DynamoDBStreamLog --output text --query 'logStreams[*].logStreamName') && for log_stream in $logstreams; do aws logs get-log-events --log-group-name /aws/lambda/DynamoDBStreamLog --log-stream-name $log_stream --output text --query 'events[*].message'; done
+  998  cd lambda/
+  999  cd deep
+ 1000  ls
+ 1001  ls -lart
+ 1002  history > cmds_220721
